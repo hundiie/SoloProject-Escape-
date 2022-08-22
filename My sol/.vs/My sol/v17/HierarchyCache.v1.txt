@@ -1,0 +1,984 @@
+﻿++솔루션 'My sol' ‎(2/2개 프로젝트)
+i:{00000000-0000-0000-0000-000000000000}:My sol.sln
+++Assembly-CSharp
+i:{00000000-0000-0000-0000-000000000000}:Assembly-CSharp
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++참조
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Assets
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\
+i:{4a902979-866f-ea72-9904-be66f56c4924}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\
+++Asset
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\
+i:{4a902979-866f-ea72-9904-be66f56c4924}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\
+++Script
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\script\
+++Camera
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\script\camera\
+++CameraMove.cs
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\script\camera\cameramove.cs
+++Map
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\script\map\
+++MapManager.cs
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\script\map\mapmanager.cs
+++Monster
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\script\monster\
+++MonsterAI.cs
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\script\monster\monsterai.cs
+++MonsterMove.cs
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\script\monster\monstermove.cs
+++Player
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\script\player\
+++PlayerInput.cs
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\script\player\playerinput.cs
+++PlayerItem.cs
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\script\player\playeritem.cs
+++PlayerManager.cs
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\script\player\playermanager.cs
+++PlayerMove.cs
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\script\player\playermove.cs
+++UI
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\script\ui\
+++Foot.cs
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\script\ui\foot.cs
+++UIManager.cs
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\script\ui\uimanager.cs
+++Wave
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\script\wave\
+++Wave.cs
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\script\wave\wave.cs
+++WaveManager.cs
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\script\wave\wavemanager.cs
+++Microsoft.Win32.Primitives
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++mscorlib
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++netstandard
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Newtonsoft.Json
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++PPv2URPConverters
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++ReportGeneratorMerged
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.AppContext
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Buffers
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Collections
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Collections.Concurrent
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Collections.NonGeneric
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Collections.Specialized
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.ComponentModel
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.ComponentModel.Composition
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.ComponentModel.EventBasedAsync
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.ComponentModel.Primitives
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.ComponentModel.TypeConverter
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Console
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Core
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Data
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Data.Common
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Diagnostics.Contracts
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Diagnostics.Debug
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Diagnostics.FileVersionInfo
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Diagnostics.Process
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Diagnostics.StackTrace
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Diagnostics.TextWriterTraceListener
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Diagnostics.Tools
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Diagnostics.TraceSource
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Diagnostics.Tracing
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+++System.Drawing
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Drawing.Primitives
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Dynamic.Runtime
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Globalization
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Globalization.Calendars
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Globalization.Extensions
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.IO
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.IO.Compression
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.IO.Compression.FileSystem
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.IO.Compression.ZipFile
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.IO.FileSystem
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.IO.FileSystem.DriveInfo
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.IO.FileSystem.Primitives
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.IO.FileSystem.Watcher
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.IO.IsolatedStorage
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.IO.MemoryMappedFiles
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.IO.Pipes
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.IO.UnmanagedMemoryStream
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Linq
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Linq.Expressions
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Linq.Parallel
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Linq.Queryable
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Memory
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Net
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+++System.Net.Http
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Net.NameResolution
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Net.NetworkInformation
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Net.Ping
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Net.Primitives
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Net.Requests
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Net.Security
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Net.Sockets
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Net.WebHeaderCollection
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Net.WebSockets
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Net.WebSockets.Client
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Numerics
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Numerics.Vectors
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.ObjectModel
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Reflection
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Reflection.DispatchProxy
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Reflection.Emit
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Reflection.Emit.ILGeneration
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Reflection.Emit.Lightweight
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Reflection.Extensions
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Reflection.Primitives
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Resources.Reader
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Resources.ResourceManager
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Resources.Writer
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Runtime
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Runtime.CompilerServices.VisualC
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Runtime.Extensions
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Runtime.Handles
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Runtime.InteropServices
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Runtime.InteropServices.RuntimeInformation
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Runtime.InteropServices.WindowsRuntime
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Runtime.Numerics
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Runtime.Serialization
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Runtime.Serialization.Formatters
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Runtime.Serialization.Json
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Runtime.Serialization.Primitives
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Runtime.Serialization.Xml
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Security.Claims
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Security.Cryptography.Algorithms
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Security.Cryptography.Csp
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Security.Cryptography.Encoding
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Security.Cryptography.Primitives
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Security.Cryptography.X509Certificates
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Security.Principal
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Security.SecureString
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.ServiceModel.Web
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+++System.Text.Encoding
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Text.Encoding.Extensions
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Text.RegularExpressions
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Threading
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Threading.Overlapped
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Threading.Tasks
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Threading.Tasks.Extensions
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Threading.Tasks.Parallel
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Threading.Thread
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Threading.ThreadPool
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Threading.Timer
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Transactions
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.ValueTuple
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Web
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+++System.Windows
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+++System.Xml
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Xml.Linq
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Xml.ReaderWriter
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Xml.Serialization
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+++System.Xml.XDocument
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Xml.XmlDocument
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Xml.XmlSerializer
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Xml.XPath
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Xml.XPath.XDocument
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.Burst
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.Burst.Cecil
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.Burst.Cecil.Mdb
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.Burst.Cecil.Pdb
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.Burst.Cecil.Rocks
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.Burst.Editor
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.Burst.Unsafe
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.EditorCoroutines.Editor
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.Mathematics
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.Mathematics.Editor
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.Performance.Profile-Analyzer.Editor
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.PlasticSCM.Editor
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.RenderPipeline.Universal.ShaderLibrary
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.RenderPipelines.Core.Editor
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.RenderPipelines.Core.Runtime
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.RenderPipelines.Core.ShaderLibrary
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.RenderPipelines.Universal.Editor
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.RenderPipelines.Universal.Runtime
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.RenderPipelines.Universal.Shaders
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.Rider.Editor
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.Searcher.Editor
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.Services.Core
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.Services.Core.Analytics
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.Services.Core.Environments
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.ShaderGraph.Editor
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.TestTools.CodeCoverage.Editor
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.TestTools.CodeCoverage.Editor.OpenCover.Model
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.TextMeshPro
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.TextMeshPro.Editor
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.Timeline
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.Timeline.Editor
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.VisualScripting.Antlr3.Runtime
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.VisualScripting.Core
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.VisualScripting.Core.Editor
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.VisualScripting.Flow
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.VisualScripting.Flow.Editor
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.VisualScripting.SettingsProvider.Editor
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.VisualScripting.Shared.Editor
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.VisualScripting.State
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.VisualScripting.State.Editor
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.VisualStudio.Editor
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.VSCode.Editor
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEditor
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEditor.CoreModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEditor.DeviceSimulatorModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEditor.DiagnosticsModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEditor.GraphViewModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEditor.PackageManagerUIModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEditor.QuickSearchModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEditor.SceneTemplateModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEditor.TextCoreFontEngineModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEditor.TextCoreTextEngineModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEditor.UI
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEditor.UIBuilderModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEditor.UIElementsModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEditor.UIElementsSamplesModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEditor.UIServiceModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEditor.UnityConnectModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.AccessibilityModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.AIModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.AndroidJNIModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.AnimationModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.ARModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.AssetBundleModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.AudioModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.ClothModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.ClusterInputModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.ClusterRendererModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.CoreModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.CrashReportingModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.DirectorModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.DSPGraphModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.GameCenterModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.GIModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.GridModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.HotReloadModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.ImageConversionModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.IMGUIModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.InputLegacyModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.InputModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.JSONSerializeModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.LocalizationModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.ParticleSystemModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.PerformanceReportingModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.Physics2DModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.PhysicsModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.ProfilerModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.ScreenCaptureModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.SharedInternalsModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.SpriteMaskModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.SpriteShapeModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.StreamingModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.SubstanceModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.SubsystemsModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.TerrainModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.TerrainPhysicsModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.TextCoreFontEngineModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.TextCoreTextEngineModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.TextRenderingModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.TilemapModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.TLSModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.UI
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.UIElementsModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.UIElementsNativeModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.UIModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.UmbraModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.UNETModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.UnityAnalyticsModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.UnityConnectModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.UnityCurlModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.UnityTestProtocolModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.UnityWebRequestAssetBundleModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.UnityWebRequestAudioModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.UnityWebRequestModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.UnityWebRequestTextureModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.UnityWebRequestWWWModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.VehiclesModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.VFXModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.VideoModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.VirtualTexturingModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.VRModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.WindModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.XRModule
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++TextMesh Pro
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\
+++URPOutlinesPack
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\
+i:{4a902979-866f-ea72-9904-be66f56c4924}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\
+++Fonts
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\fonts\
+++Resources
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\resources\
+++Shaders
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\shaders\
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\bluroutline\shaders\
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\easyoutlines\shaders\
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\edgedetectionoutlines\shaders\
+++Sprites
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\sprites\
+++BlurOutline
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\bluroutline\
+++Common
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\common\
+++EasyOutlines
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\easyoutlines\
+i:{4a902979-866f-ea72-9904-be66f56c4924}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\easyoutlines\
+++EdgeDetectionOutlines
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\edgedetectionoutlines\
+++Readme.txt
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\readme.txt
+++LiberationSans - OFL.txt
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\fonts\liberationsans - ofl.txt
+++LineBreaking Following Characters.txt
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\resources\linebreaking following characters.txt
+++LineBreaking Leading Characters.txt
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\resources\linebreaking leading characters.txt
+++TMP_Bitmap-Custom-Atlas.shader
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\shaders\tmp_bitmap-custom-atlas.shader
+++TMP_Bitmap-Mobile.shader
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\shaders\tmp_bitmap-mobile.shader
+++TMP_Bitmap.shader
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\shaders\tmp_bitmap.shader
+++TMP_SDF-Mobile Masking.shader
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\shaders\tmp_sdf-mobile masking.shader
+++TMP_SDF-Mobile Overlay.shader
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\shaders\tmp_sdf-mobile overlay.shader
+++TMP_SDF-Mobile SSD.shader
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\shaders\tmp_sdf-mobile ssd.shader
+++TMP_SDF-Mobile.shader
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\shaders\tmp_sdf-mobile.shader
+++TMP_SDF-Surface-Mobile.shader
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\shaders\tmp_sdf-surface-mobile.shader
+++TMP_SDF-Surface.shader
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\shaders\tmp_sdf-surface.shader
+++TMP_SDF Overlay.shader
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\shaders\tmp_sdf overlay.shader
+++TMP_SDF SSD.shader
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\shaders\tmp_sdf ssd.shader
+++TMP_SDF.shader
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\shaders\tmp_sdf.shader
+++TMP_Sprite.shader
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\shaders\tmp_sprite.shader
+++TMPro.cginc
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\shaders\tmpro.cginc
+++TMPro_Mobile.cginc
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\shaders\tmpro_mobile.cginc
+++TMPro_Properties.cginc
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\shaders\tmpro_properties.cginc
+++TMPro_Surface.cginc
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\shaders\tmpro_surface.cginc
+++EmojiOne Attribution.txt
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\textmesh pro\sprites\emojione attribution.txt
+++URPFeature
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\bluroutline\urpfeature\
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\edgedetectionoutlines\urpfeature\
+++DepthMaskPass.cs
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\common\depthmaskpass.cs
+++MaskShader.shader
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\common\maskshader.shader
+++BlurOutlines.shader
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\bluroutline\shaders\bluroutlines.shader
+++OutlineObject.shader
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\bluroutline\shaders\outlineobject.shader
+++BlurFeature.cs
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\bluroutline\urpfeature\blurfeature.cs
+++BlurPass.cs
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\bluroutline\urpfeature\blurpass.cs
+++BlurSettings.cs
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\bluroutline\urpfeature\blursettings.cs
+++ObjectsPass.cs
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\bluroutline\urpfeature\objectspass.cs
+++MaskOutline
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\easyoutlines\shaders\maskoutline\
+++OnlyOutline.shader
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\easyoutlines\shaders\onlyoutline.shader
+++OutlineMetallic.shader
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\easyoutlines\shaders\outlinemetallic.shader
+++OutlineSpecular.shader
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\easyoutlines\shaders\outlinespecular.shader
+++EdgeDetecionOutlines.shader
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\edgedetectionoutlines\shaders\edgedetecionoutlines.shader
+++NormalsDepth.shader
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\edgedetectionoutlines\shaders\normalsdepth.shader
+++DepthNormalOnlyPass.cs
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\edgedetectionoutlines\urpfeature\depthnormalonlypass.cs
+++EdgeOutlinesFeature.cs
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\edgedetectionoutlines\urpfeature\edgeoutlinesfeature.cs
+++EdgeOutlinesPass.cs
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\edgedetectionoutlines\urpfeature\edgeoutlinespass.cs
+++EdgeOutlinesSettings.cs
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\edgedetectionoutlines\urpfeature\edgeoutlinessettings.cs
+++OnlyOutlineWithMask.shader
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\easyoutlines\shaders\maskoutline\onlyoutlinewithmask.shader
+++OutlineMask.shader
+i:{ce56f277-73b4-a3eb-bbf9-937f9227d2b0}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\easyoutlines\shaders\maskoutline\outlinemask.shader
+++Assembly-CSharp-Editor
+i:{00000000-0000-0000-0000-000000000000}:Assembly-CSharp-Editor
+++log4netPlastic
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Microsoft.CSharp
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++nunit.framework
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.ComponentModel.Annotations
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Data.DataSetExtensions
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.Net.Http.Rtc
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.ServiceModel.Duplex
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.ServiceModel.Http
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.ServiceModel.NetTcp
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.ServiceModel.Primitives
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++System.ServiceModel.Security
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.Plastic.Antlr3.Runtime
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.Plastic.Newtonsoft.Json
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.VisualScripting.IonicZip
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.VisualScripting.TextureAssets
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Unity.VisualScripting.YamlDotNet
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEditor.Graphs
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEditor.TestRunner
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEditor.WebGL.Extensions
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEditor.WindowsStandalone.Extensions
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.NVIDIAModule
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++UnityEngine.TestRunner
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++unityplastic
+i:{4a902979-866f-ea72-9904-be66f56c4924}:
+++Editor
+i:{4a902979-866f-ea72-9904-be66f56c4924}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\easyoutlines\editor\
+++Inspector
+i:{4a902979-866f-ea72-9904-be66f56c4924}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\easyoutlines\editor\inspector\
+++Tools
+i:{4a902979-866f-ea72-9904-be66f56c4924}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\easyoutlines\editor\tools\
+++Base
+i:{4a902979-866f-ea72-9904-be66f56c4924}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\easyoutlines\editor\inspector\base\
+++MaskOutlineEditor.cs
+i:{4a902979-866f-ea72-9904-be66f56c4924}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\easyoutlines\editor\inspector\maskoutlineeditor.cs
+++OnlyOutlineEditor.cs
+i:{4a902979-866f-ea72-9904-be66f56c4924}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\easyoutlines\editor\inspector\onlyoutlineeditor.cs
+++OutlineEditor.cs
+i:{4a902979-866f-ea72-9904-be66f56c4924}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\easyoutlines\editor\inspector\outlineeditor.cs
+++OutlinesNormalCalc.cs
+i:{4a902979-866f-ea72-9904-be66f56c4924}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\easyoutlines\editor\tools\outlinesnormalcalc.cs
+++BasicShaderEditor.cs
+i:{4a902979-866f-ea72-9904-be66f56c4924}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\easyoutlines\editor\inspector\base\basicshadereditor.cs
+++RampEditor.cs
+i:{4a902979-866f-ea72-9904-be66f56c4924}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\easyoutlines\editor\inspector\base\rampeditor.cs
+++ShaderEditorUtility.cs
+i:{4a902979-866f-ea72-9904-be66f56c4924}:c:\metarverse#1\ldh\solo_project-escape-\my sol\assets\asset\urpoutlinespack\easyoutlines\editor\inspector\base\shadereditorutility.cs
