@@ -5,57 +5,25 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    public GameObject Foot;
-    private GameObject[] Direction = new GameObject[2];
-
-    public GameObject Die;
-    private Image _Image;
-
-    private void Awake()
-    {
-        for (int i = 0; i < 2; i++)
-        {
-            Direction[i] = Foot.transform.GetChild(i).gameObject;
-        }
-        _Image = Die.transform.GetChild(0).GetComponent<Image>();
-    }
-
+    public GameObject UI_WalkManager;
+    public GameObject UI_Die;
+    
     public void Setway(Transform trans, bool direction, Color COLOR)
     {
-        Vector3 v3 = new Vector3(trans.position.x, trans.position.y - 0.998f, trans.position.z);
-        if (direction)
-        {
-            Direction[0].transform.GetChild(0).gameObject.GetComponent<RawImage>().color = COLOR;
-            Instantiate(Direction[0], v3, trans.rotation);
-        }
-        else
-        {
-            Direction[1].transform.GetChild(0).gameObject.GetComponent<RawImage>().color = COLOR;
-            Instantiate(Direction[1], v3, trans.rotation);
-        }
+        UI_WalkManager.GetComponent<WalkManager>().wayPooling(trans, direction, COLOR);
     }
 
-    public void PlayRed()
+    public void Die(bool BOOL)
     {
-        Debug.Log("µé¾î¿È0!");
-        StartCoroutine(_PlayRed());
+        if (!BOOL)
+        {
+            Color COLOR = UI_Die.GetComponent<Die>().IMG.color;
+            COLOR.a = 0;
+            UI_Die.GetComponent<Die>().IMG.color = COLOR;
+        }
+        UI_Die.SetActive(BOOL);
     }
 
-    private IEnumerator _PlayRed()
-    {
-        Debug.Log("µé¾î¿È2!");
-        while (true)
-        {
-            Debug.Log("µé¾î¿È3!");
-            Color color = _Image.color;
-            color.a += 0.1f * Time.deltaTime;
-            if (_Image.color.a > 255)
-            {
-                break;
-            }
-            _Image.color = color;
-        }
-        Debug.Log("µé¾î¿È4!");
-        yield return null;
-    }
+
+
 }

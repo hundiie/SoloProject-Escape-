@@ -53,6 +53,7 @@ public class PlayerItem : MonoBehaviour
     private void CatchItem(GameObject CatchItem)
     {
         CatchItem.GetComponent<Rigidbody>().useGravity = false;
+        CatchItem.transform.rotation = CAMERA.transform.rotation;
         CatchItem.transform.position = Vector3.MoveTowards(CatchItem.transform.position, CatchPosition.transform.position, 5f * Time.deltaTime);
         
     }
@@ -60,8 +61,7 @@ public class PlayerItem : MonoBehaviour
     private void CastItem(GameObject CastItem)
     {
         CastItem.GetComponent<Rigidbody>().useGravity = true;
-        CastItem.transform.rotation = CAMERA.transform.rotation;
-        CastItem.GetComponent<Rigidbody>().AddForce(10, 10, 700);
+        CastItem.GetComponent<Rigidbody>().AddRelativeForce(CAMERA.transform.forward + new Vector3(0, 15000, 55000) * Time.deltaTime, ForceMode.Force);
     }
 
     private Material SaveMaterial;

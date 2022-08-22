@@ -46,4 +46,19 @@ public class PlayerManager : MonoBehaviour
             _WaveManager.SetWave(gameObject.transform, SkilStep_light_Power, Color.white,"NomalSound");
         }
     }
+
+    private void DIE()
+    {
+        UiManager.GetComponent<UIManager>().Die(true);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag =="Monster")
+        {
+            Debug.Log("Á×À½");
+            DIE();
+        }
+    }
+
 }

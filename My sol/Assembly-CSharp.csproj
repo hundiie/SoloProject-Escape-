@@ -77,6 +77,12 @@
     <Compile Include="Assets\Script\UI\UIManager.cs" />
     <Compile Include="Assets\Asset\URPOutlinesPack\EdgeDetectionOutlines\URPFeature\EdgeOutlinesSettings.cs" />
     <Compile Include="Assets\Script\UI\Foot.cs" />
+    <Compile Include="Assets\Script\Item\Item.cs" />
+    <Compile Include="Assets\MapGenerator\MapGenEditor.cs" />
+    <Compile Include="Assets\MapGenerator\MapGenScript.cs" />
+    <Compile Include="Assets\Script\UI\WalkManager.cs" />
+    <Compile Include="Assets\Script\UI\FootManager.cs" />
+    <Compile Include="Assets\Script\UI\Die.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -88,6 +94,7 @@
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\Asset\URPOutlinesPack\BlurOutline\Shaders\OutlineObject.shader" />
     <None Include="Assets\Asset\URPOutlinesPack\EdgeDetectionOutlines\Shaders\NormalsDepth.shader" />
+    <None Include="Assets\Shader\MyOutLine.shader" />
     <None Include="Assets\Asset\URPOutlinesPack\Readme.txt" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Asset\URPOutlinesPack\BlurOutline\Shaders\BlurOutlines.shader" />
@@ -99,12 +106,15 @@
     <None Include="Assets\Asset\URPOutlinesPack\EdgeDetectionOutlines\Shaders\EdgeDetecionOutlines.shader" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\Asset\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\MapGenerator\README.txt" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Asset\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Asset\URPOutlinesPack\EasyOutlines\Shaders\MaskOutline\OutlineMask.shader" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Asset\URPOutlinesPack\Common\MaskShader.shader" />
+    <None Include="Assets\OnlyOutlineWithMask.shader" />
+    <None Include="Assets\OutlineSpecular.shader" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\Asset\URPOutlinesPack\EasyOutlines\Shaders\MaskOutline\OnlyOutlineWithMask.shader" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />

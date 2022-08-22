@@ -89,7 +89,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AdaptiveThicnkess: 0
+    - _AdaptiveThicnkess: 0.033
     - _AlphaClip: 0
     - _AlphaCutoff: 0.5
     - _Blend: 0
@@ -137,7 +137,7 @@ Material:
     - _StencilWriteMask: 255
     - _Strength: 0.2
     - _Surface: 0
-    - _Thicnkess: 0.01
+    - _Thicnkess: 0.031
     - _UseEmission: 0
     - _UseGradient: 0
     - _UseSpecular: 0

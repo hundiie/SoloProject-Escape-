@@ -50,6 +50,7 @@ public class MonsterMove : MonoBehaviour
             {
                 Move = false;
                 _NavMeshAgent.enabled = Move;
+                _MonsterAI.StatusChange(STATE.STAY);
             }
         }
     }

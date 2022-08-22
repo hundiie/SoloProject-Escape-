@@ -79,8 +79,8 @@ public class PlayerMove : MonoBehaviour
 
         if (_PlayerInput.Key_Shift)
         {
-            NewSpeed = moveSpeed * 0.3f;
-            Newlight_Power = light_Power * 0.3f;
+            NewSpeed = moveSpeed * 0.5f;
+            Newlight_Power = light_Power * 0.5f;
         }
 
         if (waveTime >= light_Delta)
@@ -91,10 +91,7 @@ public class PlayerMove : MonoBehaviour
             _WaveManager.SetWave(gameObject.transform, Newlight_Power,color, "NomalSound");
         }
 
-       
-            //나중에 발 아래 레이쏴서 발아래 물, 흙, 땅 구분
-
-            transform.Translate(X * NewSpeed * Time.deltaTime, 0, Z * NewSpeed * Time.deltaTime);
+        transform.Translate(X * NewSpeed * Time.deltaTime, 0, Z * NewSpeed * Time.deltaTime);
 
     }
 
