@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Die : MonoBehaviour
 {
-    public Image IMG;
+    private Image IMG;
 
     private void Awake()
     {
@@ -29,4 +29,16 @@ public class Die : MonoBehaviour
             }
         }
     }
+
+    public void _Die(bool BOOL)
+    {
+        if (!BOOL)
+        {
+            Color COLOR = IMG.color;
+            COLOR.a = 0;
+            IMG.color = COLOR;
+        }
+        gameObject.SetActive(BOOL);
+    }
+
 }

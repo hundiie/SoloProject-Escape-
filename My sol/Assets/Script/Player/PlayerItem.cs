@@ -33,6 +33,8 @@ public class PlayerItem : MonoBehaviour
                 ItemLight(Item, true);
                 if (Input.GetKeyDown(KeyCode.Mouse0))
                 {
+                    Item.GetComponent<Item>()._SoundManager = GetComponent<PlayerManager>().SoundManager.GetComponent<SoundManager>();
+                    Item.GetComponent<Item>().Player = gameObject;
                     Light = true;
                 }
                 
@@ -61,7 +63,7 @@ public class PlayerItem : MonoBehaviour
     private void CastItem(GameObject CastItem)
     {
         CastItem.GetComponent<Rigidbody>().useGravity = true;
-        CastItem.GetComponent<Rigidbody>().AddRelativeForce(CAMERA.transform.forward + new Vector3(0, 15000, 55000) * Time.deltaTime, ForceMode.Force);
+        CastItem.GetComponent<Rigidbody>().AddRelativeForce(CAMERA.transform.forward + new Vector3(0, 15000, 70000) * Time.smoothDeltaTime, ForceMode.Force);
     }
 
     private Material SaveMaterial;

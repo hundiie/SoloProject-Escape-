@@ -5,9 +5,11 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     private WaveManager _WaveManager;
+    public SoundManager _SoundManager;
 
     [Header("GameObject")]
     public GameObject WaveManager;
+    public GameObject Player;
 
     [Header("Item")]
     public float LightPower;
@@ -15,29 +17,34 @@ public class Item : MonoBehaviour
     private void Awake()
     {
         _WaveManager = WaveManager.GetComponent<WaveManager>();
+        Player = GameObject.FindWithTag("PlayerPosition");
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         Color color = Color.black;
         float Newlight_Power = LightPower;
+        int SoundNumber = 2;
         switch (collision.gameObject.tag)
         {
             case "NomalTile":
                 {
                     color = Color.white;
+                    SoundNumber = 2;
                 }
                 break;
             case "WaterTile":
                 {
                     color = Color.blue;
-                    Newlight_Power += 2;
+                    Newlight_Power *= 1.3f;
+                    SoundNumber = 5;
                 }
                 break;
             case "SoilTile":
                 {
                     color = Color.yellow;
-                    Newlight_Power -= 0.5f;
+                    Newlight_Power *= 0.7f;
+                    SoundNumber = 8;
                 }
                 break;
             default:
@@ -46,6 +53,15 @@ public class Item : MonoBehaviour
         if(color != Color.black)
         {
             _WaveManager.SetWave(gameObject.transform, Newlight_Power, color, "NomalSound");
+            if (Player != null)
+            {
+                float Distance = Vector3.Distance(transform.position, Player.transform.position);
+                if (Distance > 20f){ Distance = 20f; }
+                if (Distance < 0f)  { Distance = 0f; }
+                Distance /= 20f;
+                _SoundManager.PlaySound(SoundNumber, 1 - Distance);
+            }
+
         }
     }
 }

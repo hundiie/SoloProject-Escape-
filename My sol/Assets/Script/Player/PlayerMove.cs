@@ -6,6 +6,7 @@ public class PlayerMove : MonoBehaviour
 {
     private PlayerManager _PlayerManager;
     private PlayerInput _PlayerInput;
+    private SoundManager _SoundManager;
     private WaveManager _WaveManager;
     private UIManager _UIManager;
     
@@ -21,8 +22,11 @@ public class PlayerMove : MonoBehaviour
         _PlayerInput = GetComponent<PlayerInput>();
         _WaveManager = _PlayerManager.WaveManager.GetComponent<WaveManager>();
         _UIManager = _PlayerManager.UiManager.GetComponent<UIManager>();
+        _SoundManager = _PlayerManager.SoundManager.GetComponent<SoundManager>();
+
         CAMERA = GetComponent<PlayerManager>().CAMERA;
         moveSpeed = _PlayerManager.moveSpeed;
+        
         light_Delta = _PlayerManager.light_Delta;
         light_Power = _PlayerManager.light_Power;
     }
@@ -52,30 +56,28 @@ public class PlayerMove : MonoBehaviour
         
         float NewSpeed = moveSpeed;
         float Newlight_Power = light_Power;
+        int SoundNumber = 0;
         Color color = Color.white;
 
-        RaycastHit hit;
-        Vector3 DownPosition = transform.GetChild(0).transform.forward;
-        Debug.DrawRay(transform.position, DownPosition * 2, Color.red);
-        if (Physics.Raycast(transform.position, DownPosition, out hit, 2))
+        switch (_PlayerManager.GetTile())
         {
-            switch (hit.collider.gameObject.tag)
-            {
-                case "NomalTile": color = Color.white;
-                    break;
-                case "WaterTile": color = Color.blue;
-                    NewSpeed -= 1;
-                    Newlight_Power += 2;
-                    break;
-                case "SoilTile": color = Color.yellow;
-                    NewSpeed -= 0.5f;
-                    Newlight_Power -= 0.5f;
-                    break;
-                default:
-                    break;
-            }
+            case 1:
+                color = Color.white; SoundNumber = 0;
+                break;
+            case 2:
+                color = Color.blue; SoundNumber = 3;
+                NewSpeed *= 0.7f;
+                Newlight_Power *= 1.3f;
+                break;
+            case 3:
+                color = Color.yellow; SoundNumber = 6;
+                NewSpeed *= 0.7f;
+                Newlight_Power *= 0.7f;
+                break;
+            default:
+                break;
         }
-
+        
 
         if (_PlayerInput.Key_Shift)
         {
@@ -89,6 +91,7 @@ public class PlayerMove : MonoBehaviour
             foot = !foot;
             _UIManager.Setway(transform, foot, color);
             _WaveManager.SetWave(gameObject.transform, Newlight_Power,color, "NomalSound");
+            _SoundManager.PlaySound(SoundNumber, 1);
         }
 
         transform.Translate(X * NewSpeed * Time.deltaTime, 0, Z * NewSpeed * Time.deltaTime);

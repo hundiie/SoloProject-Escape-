@@ -11,6 +11,8 @@ TagManager:
   - NomalTile
   - WaterTile
   - SoilTile
+  - NatureSound
+  - PlayerPosition
   layers:
   - Default
   - TransparentFX

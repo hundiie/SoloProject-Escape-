@@ -121,7 +121,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _Thicnkess: 0.03
+    - _Thicnkess: 0.1
     - _UseEmission: 1
     - _UseGradient: 0
     - _UseSpecular: 0
@@ -131,7 +131,7 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _OutlineColor: {r: 1, g: 1, b: 1, a: 0}
+    - _OutlineColor: {r: 0.9056604, g: 0.8418364, b: 0.24350302, a: 0}
     - _SpecColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &6209720719485577293

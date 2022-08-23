@@ -6,8 +6,10 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public GameObject UI_WalkManager;
+    public GameObject UI_Center;
     public GameObject UI_Die;
-    
+    public GameObject UI_Skill;
+    public GameObject UI_Pause;
     public void Setway(Transform trans, bool direction, Color COLOR)
     {
         UI_WalkManager.GetComponent<WalkManager>().wayPooling(trans, direction, COLOR);
@@ -15,15 +17,12 @@ public class UIManager : MonoBehaviour
 
     public void Die(bool BOOL)
     {
-        if (!BOOL)
-        {
-            Color COLOR = UI_Die.GetComponent<Die>().IMG.color;
-            COLOR.a = 0;
-            UI_Die.GetComponent<Die>().IMG.color = COLOR;
-        }
-        UI_Die.SetActive(BOOL);
+        UI_Die.GetComponent<Die>()._Die(BOOL);
     }
 
-
+    public void Skill(float CoolTime)
+    {
+        UI_Skill.GetComponent<Skill>()._Skill(CoolTime);
+    }
 
 }

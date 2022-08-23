@@ -6,7 +6,8 @@ public enum STATE
 {
     None,
     STAY,
-    MOVE, 
+    MOVE
+    //PATROL
 }
 
 public class MonsterAI : MonoBehaviour
@@ -14,39 +15,43 @@ public class MonsterAI : MonoBehaviour
     public STATE State;
     public STATE prevState = STATE.None;
 
-    [Header("GameObject")]
-    public GameObject UIManager;
-    public GameObject WaveManager;
-
-    private UIManager _UIManager;
+    private SoundManager _SoundManager;
     private WaveManager _WaveManager;
+    private UIManager _UIManager;
+
+    [Header("GameObject")]
+    public GameObject SoundManager;
+    public GameObject WaveManager;
+    public GameObject UIManager;
+
 
     [Header("Move")]
     public float MoveSpeed; //{ get; private set; }
     public float light_Power;//{ get; private set; }
 
+    //[Header("Patrol")]
+    //public GameObject[] PatrolTaget = new GameObject[0];
+
     private void Awake()
     {
-        _UIManager = UIManager.GetComponent<UIManager>();
+        _SoundManager = SoundManager.GetComponent<SoundManager>();
         _WaveManager = WaveManager.GetComponent<WaveManager>();
+        _UIManager = UIManager.GetComponent<UIManager>();
         StatusChange(STATE.STAY);
     }
 
     private void FixedUpdate()
     {
-        
-
         switch (State)
         {
             case STATE.STAY: UpdateStay(); break;
             case STATE.MOVE: UpdateMove(); break;
+            //case STATE.PATROL: UpdatePatrol(); break;
         }
     }
     float StayTime;
     private void UpdateStay()
     {
-        
-
         StayTime += Time.deltaTime;
         if (StayTime >= 5.0f)
         {
@@ -58,13 +63,18 @@ public class MonsterAI : MonoBehaviour
     {
 
     }
-
     private IEnumerator STAY()
     {
         Debug.Log($"{gameObject.name} : STAY 상태 시작");
-        while (true)
+        
+        //while (true)
         {
-            yield return new WaitForSeconds(5f);
+            int Ran = Random.Range(0, 5);
+            if (Ran >= 2)
+            {
+                //StatusChange(STATE.PATROL);
+            }
+            //yield return new WaitForSeconds(3f);
             yield break;
         }
     }
@@ -72,13 +82,25 @@ public class MonsterAI : MonoBehaviour
     private IEnumerator MOVE()
     {
         Debug.Log($"{gameObject.name} : MOVE 상태 시작");
-        while (true)
+        //while (true)
         {
-            yield return new WaitForSeconds(3f);
+            //yield return new WaitForSeconds(3f);
             yield break;
         }
     }
-
+    /*
+    private IEnumerator PATROL()
+    {
+        Debug.Log($"{gameObject.name} : PATROL 상태 시작");
+        
+        GetComponent<MonsterMove>().SetTaget(PatrolTaget[Random.Range(0, PatrolTaget.Length)].transform.position, false);
+        while (true)
+        {
+            //yield return new WaitForSeconds(3f);
+            yield break;
+        }
+    }
+    */
     public void StatusChange(STATE nextState)
     {
         if (prevState == nextState) return;
@@ -89,8 +111,9 @@ public class MonsterAI : MonoBehaviour
 
         switch (State)
         {
-            case STATE.STAY:StartCoroutine(STAY()); break;
-            case STATE.MOVE:StartCoroutine(MOVE()); break;
+            case STATE.STAY: StartCoroutine(STAY()); break;
+            case STATE.MOVE: StartCoroutine(MOVE()); break;
+            //case STATE.PATROL: StartCoroutine(PATROL()); break;
             default:break;
         }
     }
@@ -110,7 +133,7 @@ public class MonsterAI : MonoBehaviour
             //}
             StatusChange(STATE.MOVE);
             GetComponent<MonsterMove>().SaveVector = other.transform.position;
-            GetComponent<MonsterMove>().SetTaget(other.transform.position);
+            GetComponent<MonsterMove>().SetTaget(other.transform.position,true);
         }
     }
     
