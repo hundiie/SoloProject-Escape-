@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class WaveManager : MonoBehaviour
 {
-    private GameObject[] Wave = new GameObject[20];
+    private GameObject[] Wave = new GameObject[30];
     public float IntensitySpeed;
     private void Awake()
     {
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < Wave.Length; i++)
         {
             Wave[i] = transform.GetChild(i).gameObject;
             Wave[i].GetComponent<Wave>().IntensitySpeed = IntensitySpeed;
@@ -17,7 +17,7 @@ public class WaveManager : MonoBehaviour
 
     public void SetWave(Transform Soundtransform, float Intensity, Color color, string tag)
     {
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < Wave.Length; i++)
         {
             if (Wave[i].activeSelf == false)
             {
@@ -29,5 +29,7 @@ public class WaveManager : MonoBehaviour
                 return;
             }
         }
+        Debug.Log("저장된 웨이브 없음");
+        
     }
 }

@@ -59,17 +59,19 @@
     <Compile Include="Assets\Asset\URPOutlinesPack\EdgeDetectionOutlines\URPFeature\EdgeOutlinesPass.cs" />
     <Compile Include="Assets\Asset\URPOutlinesPack\BlurOutline\URPFeature\BlurFeature.cs" />
     <Compile Include="Assets\Script\Wave\Wave.cs" />
-    <Compile Include="Assets\Script\UI\FootManager.cs" />
-    <Compile Include="Assets\Script\UI\WalkManager.cs" />
+    <Compile Include="Assets\Script\UI\Walk\FootManager.cs" />
+    <Compile Include="Assets\Script\UI\Walk\WalkManager.cs" />
     <Compile Include="Assets\Asset\URPOutlinesPack\BlurOutline\URPFeature\BlurSettings.cs" />
     <Compile Include="Assets\Asset\URPOutlinesPack\BlurOutline\URPFeature\ObjectsPass.cs" />
     <Compile Include="Assets\Script\Camera\CameraMove.cs" />
+    <Compile Include="Assets\Script\UI\Skill.cs" />
     <Compile Include="Assets\Asset\URPOutlinesPack\EdgeDetectionOutlines\URPFeature\EdgeOutlinesFeature.cs" />
     <Compile Include="Assets\Script\Player\PlayerMove.cs" />
     <Compile Include="Assets\Script\Player\PlayerItem.cs" />
     <Compile Include="Assets\Script\Wave\WaveManager.cs" />
     <Compile Include="Assets\Script\Monster\MonsterMove.cs" />
     <Compile Include="Assets\MapGenerator\MapGenScript.cs" />
+    <Compile Include="Assets\Script\Map\MapSound.cs" />
     <Compile Include="Assets\Script\UI\Die.cs" />
     <Compile Include="Assets\Script\Item\Item.cs" />
     <Compile Include="Assets\Script\Map\MapManager.cs" />
@@ -82,10 +84,9 @@
     <Compile Include="Assets\Script\Player\PlayerManager.cs" />
     <Compile Include="Assets\Script\UI\UIManager.cs" />
     <Compile Include="Assets\Asset\URPOutlinesPack\EdgeDetectionOutlines\URPFeature\EdgeOutlinesSettings.cs" />
-    <Compile Include="Assets\Script\UI\Foot.cs" />
-    <Compile Include="Assets\Script\UI\Skill.cs" />
-    <Compile Include="Assets\Script\Map\MapSound.cs" />
     <Compile Include="Assets\Script\Sound\SoundManager.cs" />
+    <Compile Include="Assets\Script\UI\Walk\Foot.cs" />
+    <Compile Include="Assets\Script\UI\Pause.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMPro.cginc" />

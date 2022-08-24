@@ -34,7 +34,8 @@ public class PlayerItem : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.Mouse0))
                 {
                     Item.GetComponent<Item>()._SoundManager = GetComponent<PlayerManager>().SoundManager.GetComponent<SoundManager>();
-                    Item.GetComponent<Item>().Player = gameObject;
+                    Item.GetComponent<Item>().Player = gameObject; 
+                    
                     Light = true;
                 }
                 

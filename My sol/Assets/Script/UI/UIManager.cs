@@ -24,5 +24,17 @@ public class UIManager : MonoBehaviour
     {
         UI_Skill.GetComponent<Skill>()._Skill(CoolTime);
     }
+    public void Pause(bool Active)
+    {
+        Debug.Log("1");
+        UI_Pause.GetComponent<Pause>()._Pause(Active);
+        
+    }
+
+    public void SetCenter(bool Active)
+    {
+        Debug.Log("2");
+        UI_Center.SetActive(Active);
+    }
 
 }

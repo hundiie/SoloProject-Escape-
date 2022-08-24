@@ -58,8 +58,8 @@ public class PlayerMove : MonoBehaviour
         float Newlight_Power = light_Power;
         int SoundNumber = 0;
         Color color = Color.white;
-
-        switch (_PlayerManager.GetTile())
+        int TileCheck = _PlayerManager.GetTile();
+        switch (TileCheck)
         {
             case 1:
                 color = Color.white; SoundNumber = 0;
@@ -77,15 +77,14 @@ public class PlayerMove : MonoBehaviour
             default:
                 break;
         }
-        
 
         if (_PlayerInput.Key_Shift)
         {
             NewSpeed = moveSpeed * 0.5f;
             Newlight_Power = light_Power * 0.5f;
         }
-
-        if (waveTime >= light_Delta)
+        
+        if (waveTime >= light_Delta && TileCheck != 0)
         {
             waveTime = 0f;
             foot = !foot;

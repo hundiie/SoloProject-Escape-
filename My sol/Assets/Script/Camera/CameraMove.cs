@@ -22,8 +22,8 @@ public class CameraMove : MonoBehaviour
 
     private void CrameraMove()
     {
-        mouseX += Input.GetAxis("Mouse X") * MouseSpeed;
-        mouseY += Input.GetAxis("Mouse Y") * MouseSpeed;
+        mouseX += Input.GetAxis("Mouse X") * MouseSpeed * Time.deltaTime;
+        mouseY += Input.GetAxis("Mouse Y") * MouseSpeed * Time.deltaTime;
         mouseY = Mathf.Clamp(mouseY, -65f, 55f);//½Ã¾ß°¢
         transform.eulerAngles = new Vector3(-mouseY, mouseX, 0);
     }

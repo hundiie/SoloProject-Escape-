@@ -32,16 +32,29 @@ public class PlayerManager : MonoBehaviour
         _UIManager = UiManager.GetComponent<UIManager>();
         Skill_Step_Delta = 5;
     }
-
     void Update()
     {
         Skill_Step_Delta += Time.deltaTime;
+        PauseTime += Time.deltaTime;
 
+
+
+    }
+    float PauseTime;
+    private void FixedUpdate()
+    {
         if (_PlayerInput.Key_R)
         {
             Skll_Step(Skill_Step_Delta);
         }
+
+        if (_PlayerInput.Key_Esc && PauseTime >= 0.1f)
+        {
+            _UIManager.Pause(true);
+            PauseTime = 0f;
+        }
     }
+
 
     private float Skill_Step_Delta;
     private void Skll_Step(float Cooltime)
