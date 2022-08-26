@@ -8,6 +8,7 @@ public class PlayerManager : MonoBehaviour
     private SoundManager _SoundManager;
     private WaveManager _WaveManager;
     private UIManager _UIManager;
+    private PlayerSave _PlayerSave;
 
     [Header("GameObject")]
     public GameObject SoundManager;
@@ -32,20 +33,16 @@ public class PlayerManager : MonoBehaviour
         _SoundManager = SoundManager.GetComponent<SoundManager>();
         _WaveManager = WaveManager.GetComponent<WaveManager>();
         _UIManager = UiManager.GetComponent<UIManager>();
+        _PlayerSave = GetComponent<PlayerSave>();
+
         Skill_Step_Delta = SkilStep_Cooltime;
         Die = false;
     }
     void Update()
     {
+        Debug.DrawRay(transform.position, Vector3.down * 1.05f, Color.green);
         Skill_Step_Delta += Time.deltaTime;
         PauseTime += Time.deltaTime;
-
-        if (Die && Input.GetKeyDown(KeyCode.T))
-        {
-            Time.timeScale = 1f;
-            Die = false;
-            _UIManager.Die(false);
-        }
     }
     float PauseTime;
     private void FixedUpdate()
@@ -60,7 +57,6 @@ public class PlayerManager : MonoBehaviour
             _UIManager.Pause(true);
             PauseTime = 0f;
         }
-
     }
 
     private float Skill_Step_Delta;
@@ -97,6 +93,13 @@ public class PlayerManager : MonoBehaviour
         Die = true;
     }
 
+    public void Resurrection()
+    {
+        Time.timeScale = 1f;
+        transform.position = _PlayerSave.GetSavePoint();
+        Die = false;
+        _UIManager.Die(false);
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Monster" && !Die)
@@ -116,8 +119,7 @@ public class PlayerManager : MonoBehaviour
     public int GetTile()
     {
         RaycastHit hit;
-        Debug.DrawRay(transform.position, Vector3.down * 2, Color.gray);
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, 2))
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, 1.2f))
         {
             switch (hit.collider.gameObject.tag)
             {

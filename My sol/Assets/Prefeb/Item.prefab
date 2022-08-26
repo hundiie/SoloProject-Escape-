@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8835785820260343268}
   - component: {fileID: 8835785820260343272}
   - component: {fileID: 8835785820260343279}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Item
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -64,8 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 543ad6042f8511e4caa248abc7832fd8, type: 2}
-  - {fileID: 2100000, guid: a1baf7521d1131943b51472536f4500f, type: 2}
+  - {fileID: 2100000, guid: 361e2eaa3cad58240b19498700d4d570, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -128,5 +127,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fd6adb2388fa674d8765803ed723c46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaveManager: {fileID: 0}
+  Player: {fileID: 0}
   LightPower: 10

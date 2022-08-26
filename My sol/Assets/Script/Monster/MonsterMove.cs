@@ -21,9 +21,9 @@ public class MonsterMove : MonoBehaviour
     private void Awake()
     {
         _MonsterAI = GetComponent<MonsterAI>();
-        _UIManager = _MonsterAI.UIManager.GetComponent<UIManager>();
-        _SoundManager = _MonsterAI.SoundManager.GetComponent<SoundManager>();
-        _WaveManager = _MonsterAI.WaveManager.GetComponent<WaveManager>();
+        _SoundManager = GameObject.FindWithTag("SoundManager").gameObject.GetComponent<SoundManager>();
+        _WaveManager = GameObject.FindWithTag("WaveManager").gameObject.GetComponent<WaveManager>();
+        _UIManager = GameObject.FindWithTag("UIManager").gameObject.GetComponent<UIManager>();
         _NavMeshAgent = gameObject.GetComponent<NavMeshAgent>();
 
         MoveSpeed = _MonsterAI.MoveSpeed;

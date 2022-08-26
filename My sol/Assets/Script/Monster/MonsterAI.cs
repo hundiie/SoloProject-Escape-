@@ -19,12 +19,6 @@ public class MonsterAI : MonoBehaviour
     private WaveManager _WaveManager;
     private UIManager _UIManager;
 
-    [Header("GameObject")]
-    public GameObject SoundManager;
-    public GameObject WaveManager;
-    public GameObject UIManager;
-
-
     [Header("Move")]
     public float MoveSpeed; //{ get; private set; }
     public float light_Power;//{ get; private set; }
@@ -34,9 +28,9 @@ public class MonsterAI : MonoBehaviour
 
     private void Awake()
     {
-        _SoundManager = SoundManager.GetComponent<SoundManager>();
-        _WaveManager = WaveManager.GetComponent<WaveManager>();
-        _UIManager = UIManager.GetComponent<UIManager>();
+        _SoundManager = GameObject.FindWithTag("SoundManager").gameObject.GetComponent<SoundManager>();
+        _WaveManager = GameObject.FindWithTag("WaveManager").gameObject.GetComponent<WaveManager>();
+        _UIManager = GameObject.FindWithTag("UIManager").gameObject.GetComponent<UIManager>();
         StatusChange(STATE.STAY);
     }
 
@@ -50,19 +44,27 @@ public class MonsterAI : MonoBehaviour
         }
     }
     float StayTime;
+    float SoundTime;
     private void UpdateStay()
     {
         StayTime += Time.deltaTime;
-        if (StayTime >= 5.0f)
+        SoundTime += Time.deltaTime;
+        if (StayTime >= 2.0f)
         {
             StayTime = 0f;
             _WaveManager.SetWave(gameObject.transform, light_Power, Color.red, "MonsterSound");
+
+        }
+        if (SoundTime >= 5.0f)
+        {
+            SoundTime = 0f;
             float Distance = Vector3.Distance(transform.position, GameObject.FindWithTag("PlayerPosition").gameObject.transform.position);
 
             if (Distance > 30f) { Distance = 30f; }
             if (Distance < 0f) { Distance = 0f; }
             Distance /= 30f;
-            _SoundManager.PlayScreamSound(0, (1 - Distance)/2);
+            _SoundManager.PlayScreamSound(0, (1 - Distance) / 2);
+
         }
     }
     private void UpdateMove()

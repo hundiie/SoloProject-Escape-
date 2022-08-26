@@ -56,70 +56,56 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Asset\URPOutlinesPack\EdgeDetectionOutlines\URPFeature\EdgeOutlinesPass.cs" />
-    <Compile Include="Assets\Asset\URPOutlinesPack\BlurOutline\URPFeature\BlurFeature.cs" />
     <Compile Include="Assets\Script\Wave\Wave.cs" />
     <Compile Include="Assets\Script\UI\Walk\FootManager.cs" />
     <Compile Include="Assets\Script\UI\Walk\WalkManager.cs" />
-    <Compile Include="Assets\Asset\URPOutlinesPack\BlurOutline\URPFeature\BlurSettings.cs" />
-    <Compile Include="Assets\Asset\URPOutlinesPack\BlurOutline\URPFeature\ObjectsPass.cs" />
     <Compile Include="Assets\Script\Camera\CameraMove.cs" />
     <Compile Include="Assets\Script\UI\Skill.cs" />
-    <Compile Include="Assets\Asset\URPOutlinesPack\EdgeDetectionOutlines\URPFeature\EdgeOutlinesFeature.cs" />
     <Compile Include="Assets\Script\Player\PlayerMove.cs" />
     <Compile Include="Assets\Script\Player\PlayerItem.cs" />
     <Compile Include="Assets\Script\Wave\WaveManager.cs" />
+    <Compile Include="Assets\Script\UI\Retry.cs" />
     <Compile Include="Assets\Script\Monster\MonsterMove.cs" />
+    <Compile Include="Assets\Script\Item\SavePoint.cs" />
+    <Compile Include="Assets\Script\UI\TextManager.cs" />
     <Compile Include="Assets\Script\Map\MapSound.cs" />
     <Compile Include="Assets\Script\UI\Die.cs" />
     <Compile Include="Assets\Script\Item\Item.cs" />
     <Compile Include="Assets\Script\Map\MapManager.cs" />
     <Compile Include="Assets\Script\Monster\MonsterAI.cs" />
-    <Compile Include="Assets\Asset\URPOutlinesPack\Common\DepthMaskPass.cs" />
-    <Compile Include="Assets\Asset\URPOutlinesPack\BlurOutline\URPFeature\BlurPass.cs" />
+    <Compile Include="Assets\Script\UI\OneText.cs" />
     <Compile Include="Assets\Script\Player\PlayerInput.cs" />
-    <Compile Include="Assets\Asset\URPOutlinesPack\EdgeDetectionOutlines\URPFeature\DepthNormalOnlyPass.cs" />
+    <Compile Include="Assets\Script\Player\PlayerSave.cs" />
     <Compile Include="Assets\Script\Player\PlayerManager.cs" />
     <Compile Include="Assets\Script\UI\UIManager.cs" />
-    <Compile Include="Assets\Asset\URPOutlinesPack\EdgeDetectionOutlines\URPFeature\EdgeOutlinesSettings.cs" />
     <Compile Include="Assets\Script\UI\Pause.cs" />
     <Compile Include="Assets\Script\Sound\SoundManager.cs" />
     <Compile Include="Assets\Script\UI\Walk\Foot.cs" />
-    <Compile Include="Assets\Script\UI\TextManager.cs" />
-    <Compile Include="Assets\Script\UI\OneText.cs" />
+    <Compile Include="Assets\ForceField\Demo\Data\TurnOnDepthBuffer.cs" />
+    <Compile Include="Assets\Script\Wave\WaveManager2.cs" />
+    <Compile Include="Assets\Script\Wave\Wave2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\Asset\URPOutlinesPack\EasyOutlines\Shaders\OutlineSpecular.shader" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-    <None Include="Assets\Asset\URPOutlinesPack\EasyOutlines\Shaders\OutlineMetallic.shader" />
+    <None Include="Assets\ForceField\ForceField.shader" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\Asset\URPOutlinesPack\BlurOutline\Shaders\OutlineObject.shader" />
-    <None Include="Assets\Asset\URPOutlinesPack\EdgeDetectionOutlines\Shaders\NormalsDepth.shader" />
     <None Include="Assets\Shader\MyOutLine.shader" />
-    <None Include="Assets\Asset\URPOutlinesPack\Readme.txt" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\Asset\URPOutlinesPack\BlurOutline\Shaders\BlurOutlines.shader" />
-    <None Include="Assets\Asset\URPOutlinesPack\EasyOutlines\Shaders\OnlyOutline.shader" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\Asset\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\Asset\URPOutlinesPack\EdgeDetectionOutlines\Shaders\EdgeDetecionOutlines.shader" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\Asset\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Asset\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\Asset\URPOutlinesPack\EasyOutlines\Shaders\MaskOutline\OutlineMask.shader" />
+    <None Include="Assets\ForceField\README.txt" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\Asset\URPOutlinesPack\Common\MaskShader.shader" />
-    <None Include="Assets\OnlyOutlineWithMask.shader" />
-    <None Include="Assets\OutlineSpecular.shader" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\Asset\URPOutlinesPack\EasyOutlines\Shaders\MaskOutline\OnlyOutlineWithMask.shader" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\Asset\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
@@ -368,21 +354,6 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Unsafe">
-      <HintPath>Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.Unsafe.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Cecil.Mdb">
-      <HintPath>Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Cecil.Pdb">
-      <HintPath>Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Cecil">
-      <HintPath>Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Cecil.Rocks">
-      <HintPath>Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
@@ -765,15 +736,6 @@
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="PPv2URPConverters">
-      <HintPath>Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -798,15 +760,6 @@
     <Reference Include="Unity.VisualScripting.State.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Burst.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Searcher.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
@@ -825,9 +778,6 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -837,23 +787,11 @@
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Mathematics">
-      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Services.Core">
       <HintPath>Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core.Analytics">
       <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst">
-      <HintPath>Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
@@ -864,20 +802,8 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>

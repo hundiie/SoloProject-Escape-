@@ -4,22 +4,27 @@ using UnityEngine;
 
 public class OneText : MonoBehaviour
 {
-    public GameObject UI_Manager;
-    private UIManager UIM;
+    private UIManager _UIManager;
 
     public string MainText;
     public string SubText;
 
     private void Awake()
     {
-        UIM = UI_Manager.GetComponent<UIManager>();
+        _UIManager = GameObject.FindWithTag("UIManager").gameObject.GetComponent<UIManager>();
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
-            UIM.SetMainText(MainText, 72);
-            UIM.SetSubText(SubText, 48);
+            if (MainText.Length != 0)
+            {
+                _UIManager.SetMainText(MainText, 72);
+            }
+            if (SubText.Length != 0)
+            {
+                _UIManager.SetSubText(SubText, 48);
+            }
             Destroy(gameObject);
         }
     }

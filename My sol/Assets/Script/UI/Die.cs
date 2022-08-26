@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 public class Die : MonoBehaviour
 {
+    private UIManager _UIManager;
+
     private Image IMG;
     [HideInInspector] public bool die;
-
     private void Awake()
     {
+        _UIManager = transform.parent.GetComponent<UIManager>();
         IMG = transform.GetChild(0).GetComponent<Image>();
         gameObject.SetActive(false);
         die = false;
@@ -30,6 +32,7 @@ public class Die : MonoBehaviour
                 if(die)
                 { 
                     Time.timeScale = 0;
+                    _UIManager.Retry();
                 }
             }
         }

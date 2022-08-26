@@ -18,7 +18,7 @@ public class MapSound : MonoBehaviour
     private void Update()
     {
         float Distance = Vector3.Distance(transform.position, Player.transform.position);
-        if (Distance <= 50)
+        if (Distance <= 40)
         {
             SoundUpdate();
         }

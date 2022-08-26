@@ -20,7 +20,6 @@ public class Pause : MonoBehaviour
         {
             case 0:
                 {
-                    Debug.Log("4");
                     _Pause(false);
                 }
                 break;
@@ -39,7 +38,6 @@ public class Pause : MonoBehaviour
     }
     public void _Pause(bool Active)
     {
-        Debug.Log("3");
         gameObject.SetActive(Active);
 
         if (Active == true)

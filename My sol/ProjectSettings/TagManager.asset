@@ -13,6 +13,9 @@ TagManager:
   - SoilTile
   - NatureSound
   - PlayerPosition
+  - SoundManager
+  - UIManager
+  - WaveManager
   layers:
   - Default
   - TransparentFX
@@ -20,8 +23,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - SavePoint
+  - Item
   - 
   - 
   - 

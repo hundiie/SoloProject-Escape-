@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour
     public GameObject UI_Skill;
     public GameObject UI_Pause;
     public GameObject UI_Text;
+    public GameObject UI_Retry;
     public void Setway(Transform trans, bool direction, Color COLOR)
     {
         UI_WalkManager.GetComponent<WalkManager>().wayPooling(trans, direction, COLOR);
@@ -41,5 +42,8 @@ public class UIManager : MonoBehaviour
     {
         UI_Text.GetComponent<TextManager>()._SetSubText(str, FontSize);
     }
-
+    public void Retry()
+    {
+        UI_Retry.GetComponent<Retry>()._Retry();
+    }
 }

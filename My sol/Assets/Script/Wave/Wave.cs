@@ -4,56 +4,41 @@ using UnityEngine;
 
 public class Wave : MonoBehaviour
 {
-    private Light _Light;
-    private SphereCollider _SphereCollider;
-
-    private bool Light_UpDown;
+    private bool Light;
     private float intensity;
 
-    [HideInInspector] public float IntensitySpeed;
-
+    [HideInInspector] public float WaveSpeed;
     private void Awake()
     {
-        _Light = GetComponent<Light>();
-        _SphereCollider = GetComponent<SphereCollider>();
-       Light_UpDown = false;
     }
     private void Update()
     {
         if (gameObject.activeSelf)
         {
-            if (Light_UpDown)
+            if (Light)
             {
-                AddIntensity(IntensitySpeed * 1.5f);
-
-                if (_Light.intensity >= intensity)
+                Vector3 V3 = new Vector3(1, 1, 1);
+                transform.localScale += V3 * Time.deltaTime * WaveSpeed;
+                if (transform.localScale.x >= intensity)
                 {
-                    Light_UpDown = false;
+                    Light = false;
                 }
             }
-            else if (!Light_UpDown)
+            else if (!Light)
             {
-                AddIntensity(-IntensitySpeed);
-
-                if (_Light.intensity <= 0)
-                {
-                    gameObject.SetActive(false);
-                }
+                gameObject.SetActive(false);
             }
         }
     }
 
-    public void StartWave(float Intensity, Color color)
+    public void StartWave(float Intensity, Color col)
     {
         gameObject.SetActive(true);
+        transform.position -= new Vector3(0, 1, 0);
+        transform.localScale = new Vector3(0, 0, 0);
+        GetComponent<Renderer>().material.SetColor("_HighlightColor", col);
         intensity = Intensity;
-        _Light.color = color;
-        Light_UpDown =true;
+        Light = true;
     }
-
-    private void AddIntensity(float Intensity)
-    {
-        _Light.intensity += Intensity * Time.deltaTime;
-        _SphereCollider.radius += Intensity * Time.deltaTime;
-    }
+    
 }

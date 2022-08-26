@@ -7,6 +7,7 @@ public class PlayerItem : MonoBehaviour
     private GameObject CAMERA;
     private GameObject Item;
 
+    public LayerMask ItemMask;
     public Material HighlightMaterial;
     public GameObject CatchPosition;
 
@@ -33,7 +34,6 @@ public class PlayerItem : MonoBehaviour
                 ItemLight(Item, true);
                 if (Input.GetKeyDown(KeyCode.Mouse0))
                 {
-                    Item.GetComponent<Item>()._SoundManager = GetComponent<PlayerManager>().SoundManager.GetComponent<SoundManager>();
                     Item.GetComponent<Item>().Player = gameObject; 
                     
                     Light = true;
@@ -56,6 +56,7 @@ public class PlayerItem : MonoBehaviour
     private void CatchItem(GameObject CatchItem)
     {
         CatchItem.GetComponent<Rigidbody>().useGravity = false;
+        CatchItem.tag = "Untagged";
         CatchItem.transform.rotation = CAMERA.transform.rotation;
         CatchItem.transform.position = Vector3.MoveTowards(CatchItem.transform.position, CatchPosition.transform.position, 5f * Time.deltaTime);
         
@@ -64,6 +65,7 @@ public class PlayerItem : MonoBehaviour
     private void CastItem(GameObject CastItem)
     {
         CastItem.GetComponent<Rigidbody>().useGravity = true;
+        CastItem.tag = "Item";
         CastItem.GetComponent<Rigidbody>().AddRelativeForce(CAMERA.transform.forward + new Vector3(0, 10000, 30000) * Time.smoothDeltaTime, ForceMode.Force);
     }
 

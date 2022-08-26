@@ -5,18 +5,17 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     private WaveManager _WaveManager;
-    public SoundManager _SoundManager;
+    private SoundManager _SoundManager;
 
-    [Header("GameObject")]
-    public GameObject WaveManager;
-    public GameObject Player;
+    [HideInInspector] public GameObject Player;
 
     [Header("Item")]
     public float LightPower;
 
     private void Awake()
     {
-        _WaveManager = WaveManager.GetComponent<WaveManager>();
+        _SoundManager = GameObject.FindWithTag("SoundManager").gameObject.GetComponent<SoundManager>();
+        _WaveManager = GameObject.FindWithTag("WaveManager").gameObject.GetComponent<WaveManager>();
         Player = GameObject.FindWithTag("PlayerPosition");
     }
 
