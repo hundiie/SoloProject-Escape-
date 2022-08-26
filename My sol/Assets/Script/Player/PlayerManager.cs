@@ -24,21 +24,28 @@ public class PlayerManager : MonoBehaviour
     public float SkilStep_light_Power;
     public float SkilStep_Cooltime;
 
+    private bool Die;
     private void Awake()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         _PlayerInput = GetComponent<PlayerInput>();
         _SoundManager = SoundManager.GetComponent<SoundManager>();
         _WaveManager = WaveManager.GetComponent<WaveManager>();
         _UIManager = UiManager.GetComponent<UIManager>();
-        Skill_Step_Delta = 5;
+        Skill_Step_Delta = SkilStep_Cooltime;
+        Die = false;
     }
     void Update()
     {
         Skill_Step_Delta += Time.deltaTime;
         PauseTime += Time.deltaTime;
 
-
-
+        if (Die && Input.GetKeyDown(KeyCode.T))
+        {
+            Time.timeScale = 1f;
+            Die = false;
+            _UIManager.Die(false);
+        }
     }
     float PauseTime;
     private void FixedUpdate()
@@ -53,8 +60,8 @@ public class PlayerManager : MonoBehaviour
             _UIManager.Pause(true);
             PauseTime = 0f;
         }
-    }
 
+    }
 
     private float Skill_Step_Delta;
     private void Skll_Step(float Cooltime)
@@ -80,19 +87,21 @@ public class PlayerManager : MonoBehaviour
                 default:
                     break;
             }
-            _SoundManager.PlaySound(TileSound, 1);
+            _SoundManager.PlayWalkSound(TileSound, 1);
         }
     }
 
     private void DIE()
     {
         _UIManager.Die(true);
+        Die = true;
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Monster")
+        if (collision.gameObject.tag == "Monster" && !Die)
         {
+            Destroy(collision.gameObject);
             Debug.Log("Á×À½");
             DIE();
         }

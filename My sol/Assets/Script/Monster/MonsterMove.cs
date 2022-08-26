@@ -90,7 +90,7 @@ public class MonsterMove : MonoBehaviour
                 if (Distance < 0f) { Distance = 0f; }
                 Distance /= 20f;
 
-                _SoundManager.PlaySound(SoundNumber,1 - Distance);
+                _SoundManager.PlayWalkSound(SoundNumber,1 - Distance);
             }
             if (transform.position.x == SaveVector.x && transform.position.z == SaveVector.z)
             {

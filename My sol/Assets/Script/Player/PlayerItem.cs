@@ -64,7 +64,7 @@ public class PlayerItem : MonoBehaviour
     private void CastItem(GameObject CastItem)
     {
         CastItem.GetComponent<Rigidbody>().useGravity = true;
-        CastItem.GetComponent<Rigidbody>().AddRelativeForce(CAMERA.transform.forward + new Vector3(0, 15000, 70000) * Time.smoothDeltaTime, ForceMode.Force);
+        CastItem.GetComponent<Rigidbody>().AddRelativeForce(CAMERA.transform.forward + new Vector3(0, 10000, 30000) * Time.smoothDeltaTime, ForceMode.Force);
     }
 
     private Material SaveMaterial;

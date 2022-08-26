@@ -70,7 +70,6 @@
     <Compile Include="Assets\Script\Player\PlayerItem.cs" />
     <Compile Include="Assets\Script\Wave\WaveManager.cs" />
     <Compile Include="Assets\Script\Monster\MonsterMove.cs" />
-    <Compile Include="Assets\MapGenerator\MapGenScript.cs" />
     <Compile Include="Assets\Script\Map\MapSound.cs" />
     <Compile Include="Assets\Script\UI\Die.cs" />
     <Compile Include="Assets\Script\Item\Item.cs" />
@@ -78,15 +77,16 @@
     <Compile Include="Assets\Script\Monster\MonsterAI.cs" />
     <Compile Include="Assets\Asset\URPOutlinesPack\Common\DepthMaskPass.cs" />
     <Compile Include="Assets\Asset\URPOutlinesPack\BlurOutline\URPFeature\BlurPass.cs" />
-    <Compile Include="Assets\MapGenerator\MapGenEditor.cs" />
     <Compile Include="Assets\Script\Player\PlayerInput.cs" />
     <Compile Include="Assets\Asset\URPOutlinesPack\EdgeDetectionOutlines\URPFeature\DepthNormalOnlyPass.cs" />
     <Compile Include="Assets\Script\Player\PlayerManager.cs" />
     <Compile Include="Assets\Script\UI\UIManager.cs" />
     <Compile Include="Assets\Asset\URPOutlinesPack\EdgeDetectionOutlines\URPFeature\EdgeOutlinesSettings.cs" />
+    <Compile Include="Assets\Script\UI\Pause.cs" />
     <Compile Include="Assets\Script\Sound\SoundManager.cs" />
     <Compile Include="Assets\Script\UI\Walk\Foot.cs" />
-    <Compile Include="Assets\Script\UI\Pause.cs" />
+    <Compile Include="Assets\Script\UI\TextManager.cs" />
+    <Compile Include="Assets\Script\UI\OneText.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -110,7 +110,6 @@
     <None Include="Assets\Asset\URPOutlinesPack\EdgeDetectionOutlines\Shaders\EdgeDetecionOutlines.shader" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\Asset\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\MapGenerator\README.txt" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Asset\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />

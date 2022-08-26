@@ -57,6 +57,12 @@ public class MonsterAI : MonoBehaviour
         {
             StayTime = 0f;
             _WaveManager.SetWave(gameObject.transform, light_Power, Color.red, "MonsterSound");
+            float Distance = Vector3.Distance(transform.position, GameObject.FindWithTag("PlayerPosition").gameObject.transform.position);
+
+            if (Distance > 30f) { Distance = 30f; }
+            if (Distance < 0f) { Distance = 0f; }
+            Distance /= 30f;
+            _SoundManager.PlayScreamSound(0, (1 - Distance)/2);
         }
     }
     private void UpdateMove()

@@ -78,10 +78,12 @@ public class PlayerMove : MonoBehaviour
                 break;
         }
 
+        float PlayerSoundVolume = 1;
         if (_PlayerInput.Key_Shift)
         {
             NewSpeed = moveSpeed * 0.5f;
             Newlight_Power = light_Power * 0.5f;
+            PlayerSoundVolume = 0.5f;
         }
         
         if (waveTime >= light_Delta && TileCheck != 0)
@@ -90,7 +92,7 @@ public class PlayerMove : MonoBehaviour
             foot = !foot;
             _UIManager.Setway(transform, foot, color);
             _WaveManager.SetWave(gameObject.transform, Newlight_Power,color, "NomalSound");
-            _SoundManager.PlaySound(SoundNumber, 1);
+            _SoundManager.PlayWalkSound(SoundNumber, PlayerSoundVolume);
         }
 
         transform.Translate(X * NewSpeed * Time.deltaTime, 0, Z * NewSpeed * Time.deltaTime);

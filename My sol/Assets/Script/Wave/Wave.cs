@@ -12,7 +12,6 @@ public class Wave : MonoBehaviour
 
     [HideInInspector] public float IntensitySpeed;
 
-
     private void Awake()
     {
         _Light = GetComponent<Light>();
@@ -47,7 +46,6 @@ public class Wave : MonoBehaviour
     public void StartWave(float Intensity, Color color)
     {
         gameObject.SetActive(true);
-        
         intensity = Intensity;
         _Light.color = color;
         Light_UpDown =true;

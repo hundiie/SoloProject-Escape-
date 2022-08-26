@@ -59,7 +59,7 @@ public class Item : MonoBehaviour
                 if (Distance > 20f){ Distance = 20f; }
                 if (Distance < 0f)  { Distance = 0f; }
                 Distance /= 20f;
-                _SoundManager.PlaySound(SoundNumber, 1 - Distance);
+                _SoundManager.PlayWalkSound(SoundNumber, 1 - Distance);
             }
 
         }

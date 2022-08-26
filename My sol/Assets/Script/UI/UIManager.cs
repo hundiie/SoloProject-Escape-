@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     public GameObject UI_Die;
     public GameObject UI_Skill;
     public GameObject UI_Pause;
+    public GameObject UI_Text;
     public void Setway(Transform trans, bool direction, Color COLOR)
     {
         UI_WalkManager.GetComponent<WalkManager>().wayPooling(trans, direction, COLOR);
@@ -26,15 +27,19 @@ public class UIManager : MonoBehaviour
     }
     public void Pause(bool Active)
     {
-        Debug.Log("1");
-        UI_Pause.GetComponent<Pause>()._Pause(Active);
-        
+        UI_Pause.GetComponent<Pause>()._Pause(Active);   
     }
-
     public void SetCenter(bool Active)
     {
-        Debug.Log("2");
         UI_Center.SetActive(Active);
+    }
+    public void SetMainText(string str, int FontSize)
+    {
+        UI_Text.GetComponent<TextManager>()._SetMainText(str, FontSize);
+    }
+    public void SetSubText(string str, int FontSize)
+    {
+        UI_Text.GetComponent<TextManager>()._SetSubText(str, FontSize);
     }
 
 }

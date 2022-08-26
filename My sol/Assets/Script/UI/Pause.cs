@@ -30,7 +30,7 @@ public class Pause : MonoBehaviour
                 break;
             case 2:// ³ª±â±â
                 {
-
+                    Application.Quit();
                 }
                 break;
             default:
@@ -44,11 +44,13 @@ public class Pause : MonoBehaviour
 
         if (Active == true)
         {
+            Cursor.lockState = CursorLockMode.None;
             Time.timeScale = 0f;
         }
         if (Active == false)
         {
             Time.timeScale = 1f;
+            Cursor.lockState = CursorLockMode.Locked;
         }
 
 

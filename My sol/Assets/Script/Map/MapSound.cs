@@ -39,7 +39,7 @@ public class MapSound : MonoBehaviour
             if (Distance < 0f) { Distance = 0f; }
             Distance /= 20f;
 
-            _SoundManager.PlaySound(12, 1 - Distance);
+            _SoundManager.PlayWalkSound(12, 1 - Distance);
         }
     }
     public void _SetMapSound(float Delay, float LightPower, Color LightColor, string tag)

@@ -12,6 +12,7 @@ public class PlayerInput : MonoBehaviour
     public bool Key_Ctrl { get; private set; }
     public bool Key_Space { get; private set; }
     public bool Key_Esc { get; private set; }
+    public bool Key_T { get; private set; }
     private void FixedUpdate()
     {
         X = Input.GetAxis("Horizontal");
@@ -22,5 +23,6 @@ public class PlayerInput : MonoBehaviour
         Key_Ctrl = Input.GetKey(KeyCode.LeftControl);
         Key_Space = Input.GetKey(KeyCode.Space);
         Key_Esc = Input.GetKey(KeyCode.Escape);
+        Key_T = Input.GetKey(KeyCode.T);
     }
 }
