@@ -51,7 +51,7 @@ public class Item : MonoBehaviour
         }
         if(color != Color.black)
         {
-            _WaveManager.SetWave(gameObject.transform, Newlight_Power, color, "NomalSound");
+            _WaveManager.SetWave(gameObject.transform, Newlight_Power, color, WAVETAG.NOMALSOUND);
             if (Player != null)
             {
                 float Distance = Vector3.Distance(transform.position, Player.transform.position);

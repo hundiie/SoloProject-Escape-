@@ -83,7 +83,7 @@ public class MonsterMove : MonoBehaviour
                 waveTime = 0f;
                 foot = !foot;
                 _UIManager.Setway(transform, foot, Color.red);
-                _WaveManager.SetWave(gameObject.transform, NewLight_Power, Color.red, "MonsterSound");
+                _WaveManager.SetWave(gameObject.transform, NewLight_Power, Color.red, WAVETAG.MONSTERSOUND);
                 float Distance = Vector3.Distance(transform.position, GameObject.FindWithTag("PlayerPosition").gameObject.transform.position);
                 
                 if (Distance > 20f) { Distance = 20f; }
@@ -106,7 +106,12 @@ public class MonsterMove : MonoBehaviour
         Move = true;
         RUN = Run;
         _NavMeshAgent.enabled = true;
-        _NavMeshAgent.SetDestination(vector);
+        TagetChange(vector);
     }
    
+    public void TagetChange(Vector3 vector)
+    {
+        _NavMeshAgent.SetDestination(vector);
+    }
+
 }

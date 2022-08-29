@@ -4,41 +4,36 @@ using UnityEngine;
 
 public class Wave : MonoBehaviour
 {
-    private bool Light;
-    private float intensity;
-
-    [HideInInspector] public float WaveSpeed;
-    private void Awake()
-    {
-    }
-    private void Update()
-    {
-        if (gameObject.activeSelf)
-        {
-            if (Light)
-            {
-                Vector3 V3 = new Vector3(1, 1, 1);
-                transform.localScale += V3 * Time.deltaTime * WaveSpeed;
-                if (transform.localScale.x >= intensity)
-                {
-                    Light = false;
-                }
-            }
-            else if (!Light)
-            {
-                gameObject.SetActive(false);
-            }
-        }
-    }
-
-    public void StartWave(float Intensity, Color col)
+    public void StartWave(float Size, float MoveSpeed, Color col)
     {
         gameObject.SetActive(true);
         transform.position -= new Vector3(0, 1, 0);
-        transform.localScale = new Vector3(0, 0, 0);
         GetComponent<Renderer>().material.SetColor("_HighlightColor", col);
-        intensity = Intensity;
-        Light = true;
+        GetComponent<Renderer>().material.color = col;
+        StartCoroutine(BlowUp(Size, MoveSpeed));
+        StartCoroutine(Pade(Size, MoveSpeed));
     }
     
+    private IEnumerator BlowUp(float Size, float WaveSpeed)
+    {
+        for (float Blow = 0; Blow < Size; Blow+= WaveSpeed * Time.deltaTime)
+        {
+            transform.localScale = new Vector3(Blow, Blow, Blow);
+            yield return null;
+        }
+        
+    }
+
+    private IEnumerator Pade(float Size, float WaveSpeed)
+    {
+        Color color = GetComponent<Renderer>().material.GetColor("_HighlightColor");
+        for (float pade = 1; pade >= 0; pade -= WaveSpeed / Size * Time.deltaTime)
+        {
+            color.a = pade;
+            GetComponent<Renderer>().material.SetColor("_HighlightColor", color);
+            yield return null;
+        }
+        gameObject.SetActive(false);
+    }
+
 }

@@ -19,6 +19,7 @@ public class MonsterAI : MonoBehaviour
     private WaveManager _WaveManager;
     private UIManager _UIManager;
 
+    public Vector3 SavePosition;
     [Header("Move")]
     public float MoveSpeed; //{ get; private set; }
     public float light_Power;//{ get; private set; }
@@ -28,7 +29,8 @@ public class MonsterAI : MonoBehaviour
 
     private void Awake()
     {
-        _SoundManager = GameObject.FindWithTag("SoundManager").gameObject.GetComponent<SoundManager>();
+        SavePosition = transform.position;
+           _SoundManager = GameObject.FindWithTag("SoundManager").gameObject.GetComponent<SoundManager>();
         _WaveManager = GameObject.FindWithTag("WaveManager").gameObject.GetComponent<WaveManager>();
         _UIManager = GameObject.FindWithTag("UIManager").gameObject.GetComponent<UIManager>();
         StatusChange(STATE.STAY);
@@ -52,7 +54,7 @@ public class MonsterAI : MonoBehaviour
         if (StayTime >= 2.0f)
         {
             StayTime = 0f;
-            _WaveManager.SetWave(gameObject.transform, light_Power, Color.red, "MonsterSound");
+            _WaveManager.SetWave(gameObject.transform, light_Power, Color.red, WAVETAG.MONSTERSOUND);
 
         }
         if (SoundTime >= 5.0f)
@@ -96,19 +98,7 @@ public class MonsterAI : MonoBehaviour
             yield break;
         }
     }
-    /*
-    private IEnumerator PATROL()
-    {
-        Debug.Log($"{gameObject.name} : PATROL 상태 시작");
-        
-        GetComponent<MonsterMove>().SetTaget(PatrolTaget[Random.Range(0, PatrolTaget.Length)].transform.position, false);
-        while (true)
-        {
-            //yield return new WaitForSeconds(3f);
-            yield break;
-        }
-    }
-    */
+
     public void StatusChange(STATE nextState)
     {
         if (prevState == nextState) return;
@@ -124,6 +114,12 @@ public class MonsterAI : MonoBehaviour
             //case STATE.PATROL: StartCoroutine(PATROL()); break;
             default:break;
         }
+    }
+
+    public void comeback()
+    {
+        GetComponent<MonsterMove>().SaveVector = SavePosition;
+        GetComponent<MonsterMove>().SetTaget(SavePosition,true);
     }
 
     private void OnTriggerEnter(Collider other)

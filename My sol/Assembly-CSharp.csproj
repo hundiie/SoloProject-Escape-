@@ -56,8 +56,12 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\Wave\Wave2.cs" />
     <Compile Include="Assets\Script\Wave\Wave.cs" />
     <Compile Include="Assets\Script\UI\Walk\FootManager.cs" />
+    <Compile Include="Assets\Script\GameManager.cs" />
+    <Compile Include="Assets\Script\Wave\WaveManager2.cs" />
+    <Compile Include="Assets\Script\UI\Title.cs" />
     <Compile Include="Assets\Script\UI\Walk\WalkManager.cs" />
     <Compile Include="Assets\Script\Camera\CameraMove.cs" />
     <Compile Include="Assets\Script\UI\Skill.cs" />
@@ -73,6 +77,7 @@
     <Compile Include="Assets\Script\Item\Item.cs" />
     <Compile Include="Assets\Script\Map\MapManager.cs" />
     <Compile Include="Assets\Script\Monster\MonsterAI.cs" />
+    <Compile Include="Assets\ForceField\Demo\Data\TurnOnDepthBuffer.cs" />
     <Compile Include="Assets\Script\UI\OneText.cs" />
     <Compile Include="Assets\Script\Player\PlayerInput.cs" />
     <Compile Include="Assets\Script\Player\PlayerSave.cs" />
@@ -81,9 +86,6 @@
     <Compile Include="Assets\Script\UI\Pause.cs" />
     <Compile Include="Assets\Script\Sound\SoundManager.cs" />
     <Compile Include="Assets\Script\UI\Walk\Foot.cs" />
-    <Compile Include="Assets\ForceField\Demo\Data\TurnOnDepthBuffer.cs" />
-    <Compile Include="Assets\Script\Wave\WaveManager2.cs" />
-    <Compile Include="Assets\Script\Wave\Wave2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -781,14 +783,14 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Services.Core">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Core">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Services.Core">
-      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core.Analytics">
       <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>

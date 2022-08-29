@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum WAVETAG
+{
+    NOMALSOUND,
+    MONSTERSOUND,
+    NATURESOUND
+}
 public class WaveManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] Wave = new GameObject[30];
@@ -12,10 +18,10 @@ public class WaveManager : MonoBehaviour
         for (int i = 0; i < Wave.Length; i++)
         {
             Wave[i] = transform.GetChild(i).gameObject;
-            Wave[i].GetComponent<Wave>().WaveSpeed = WaveSpeed;
+            Wave[i].SetActive(false);
         }
     }
-    public void SetWave(Transform Soundtransform, float Size, Color color, string tag)
+    public void SetWave(Transform Soundtransform, float Size, Color color, WAVETAG tag)
     {
         for (int i = 0; i < Wave.Length; i++)
         {
@@ -23,8 +29,22 @@ public class WaveManager : MonoBehaviour
             {
                 Wave _wave = Wave[i].GetComponent<Wave>();
                 Wave[i].transform.position = Soundtransform.position;
-                Wave[i].tag = tag;
-                _wave.StartWave(Size, color);
+                string TagName = "Untagged";
+                switch (tag)
+                {
+                    case WAVETAG.NOMALSOUND:TagName = "NomalSound";
+                        break;
+                    case WAVETAG.MONSTERSOUND:
+                        TagName = "MonsterSound";
+                        break;
+                    case WAVETAG.NATURESOUND:
+                        TagName = "NatureSound";
+                        break;
+                    default:
+                        break;
+                }
+                Wave[i].tag = TagName;
+                _wave.StartWave(Size, WaveSpeed, color);
 
                 return;
             }

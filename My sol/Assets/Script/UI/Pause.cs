@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour
 {
@@ -25,6 +26,8 @@ public class Pause : MonoBehaviour
                 break;
             case 1:// 다시하기
                 {
+                    SceneManager.LoadScene(0);
+                    Time.timeScale = 1.0f;
                 }
                 break;
             case 2:// 나기기

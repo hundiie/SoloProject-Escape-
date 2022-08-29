@@ -15,7 +15,8 @@ public class PlayerManager : MonoBehaviour
     public GameObject WaveManager;
     public GameObject UiManager;
     public GameObject CAMERA;
-    
+    public GameObject Step;
+
     [Header("Move")]
     public float moveSpeed;// { get; private set; }
     public float light_Delta;// { get; private set; }
@@ -64,8 +65,14 @@ public class PlayerManager : MonoBehaviour
     {
         if (Cooltime > SkilStep_Cooltime)
         {
+            {
+                Step.SetActive(true);
+                Step.transform.position = transform.position;
+                StartCoroutine(LightPade());
+            }
+
             Skill_Step_Delta = 0;
-            _WaveManager.SetWave(gameObject.transform, SkilStep_light_Power, Color.white,"NomalSound");
+            _WaveManager.SetWave(gameObject.transform, SkilStep_light_Power, Color.white, WAVETAG.NOMALSOUND);
             _UIManager.Skill(SkilStep_Cooltime);
             int TileSound = 0;
 
@@ -87,6 +94,19 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
+    private IEnumerator LightPade()
+    {
+        for (float i = 2; i > 0; i -= 0.5f *Time.deltaTime)
+        {
+            Step.GetComponent<Light>().intensity = i;
+
+            yield return null;
+        }
+        Step.SetActive(false);
+    }
+
+
+
     private void DIE()
     {
         _UIManager.Die(true);
@@ -100,11 +120,12 @@ public class PlayerManager : MonoBehaviour
         Die = false;
         _UIManager.Die(false);
     }
+    GameObject SaveMonster;
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Monster" && !Die)
         {
-            Destroy(collision.gameObject);
+            collision.gameObject.GetComponent<MonsterAI>().comeback();
             Debug.Log("Á×À½");
             DIE();
         }
@@ -119,7 +140,7 @@ public class PlayerManager : MonoBehaviour
     public int GetTile()
     {
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, 1.2f))
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, 2f))
         {
             switch (hit.collider.gameObject.tag)
             {
@@ -127,7 +148,7 @@ public class PlayerManager : MonoBehaviour
                     return 1;
                 case "WaterTile":
                     return 2;
-                case "SoilTile":
+                case "SandTile":
                     return 3;
                 default:
                     break;
