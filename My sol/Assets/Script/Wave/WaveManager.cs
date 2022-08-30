@@ -21,14 +21,14 @@ public class WaveManager : MonoBehaviour
             Wave[i].SetActive(false);
         }
     }
-    public void SetWave(Transform Soundtransform, float Size, Color color, WAVETAG tag)
+    public void SetWave(Vector3 Soundtransform, float Size, Color color, WAVETAG tag)
     {
         for (int i = 0; i < Wave.Length; i++)
         {
             if (Wave[i].activeSelf == false)
             {
                 Wave _wave = Wave[i].GetComponent<Wave>();
-                Wave[i].transform.position = Soundtransform.position;
+                Wave[i].transform.position = Soundtransform;
                 string TagName = "Untagged";
                 switch (tag)
                 {

@@ -24,7 +24,7 @@ public class FootManager : MonoBehaviour
     }
     public void _Setway(Transform trans, int direction, Color COLOR)
     {
-        Vector3 v3 = new Vector3(trans.position.x, trans.position.y - 0.998f, trans.position.z);
+        Vector3 v3 = new Vector3(trans.position.x, trans.position.y - 1.998f, trans.position.z);
 
         Dir[direction].SetActive(true);
         Dir[direction].transform.GetChild(0).gameObject.GetComponent<RawImage>().color = COLOR;

@@ -54,7 +54,7 @@ public class MonsterAI : MonoBehaviour
         if (StayTime >= 2.0f)
         {
             StayTime = 0f;
-            _WaveManager.SetWave(gameObject.transform, light_Power, Color.red, WAVETAG.MONSTERSOUND);
+            _WaveManager.SetWave(gameObject.transform.position, light_Power, Color.red, WAVETAG.MONSTERSOUND);
 
         }
         if (SoundTime >= 5.0f)
@@ -62,9 +62,9 @@ public class MonsterAI : MonoBehaviour
             SoundTime = 0f;
             float Distance = Vector3.Distance(transform.position, GameObject.FindWithTag("PlayerPosition").gameObject.transform.position);
 
-            if (Distance > 30f) { Distance = 30f; }
+            if (Distance > 40f) { Distance = 40f; }
             if (Distance < 0f) { Distance = 0f; }
-            Distance /= 30f;
+            Distance /= 40f;
             _SoundManager.PlayScreamSound(0, (1 - Distance) / 2);
 
         }
@@ -118,10 +118,9 @@ public class MonsterAI : MonoBehaviour
 
     public void comeback()
     {
-        GetComponent<MonsterMove>().SaveVector = SavePosition;
-        GetComponent<MonsterMove>().SetTaget(SavePosition,true);
+        transform.position = SavePosition;
+        TagetOn(SavePosition);
     }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "NomalSound")
@@ -135,11 +134,18 @@ public class MonsterAI : MonoBehaviour
 
             //    }
             //}
-            StatusChange(STATE.MOVE);
-            GetComponent<MonsterMove>().SaveVector = other.transform.position;
-            GetComponent<MonsterMove>().SetTaget(other.transform.position,true);
+            TagetOn(other.gameObject.transform.position);
         }
     }
-    
-    
+    public STATE getState()
+    {
+        return State;
+    }
+
+    public void TagetOn(Vector3 Obj)
+    {
+        StatusChange(STATE.MOVE);
+        GetComponent<MonsterMove>().SaveVector = Obj;
+        GetComponent<MonsterMove>().SetTaget(Obj, true);
+    }
 }

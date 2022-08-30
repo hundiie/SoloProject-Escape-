@@ -48,8 +48,8 @@ public class MonsterMove : MonoBehaviour
         float NewLight_Power = light_Power;
         int SoundNumber = 9;
         RaycastHit hit;
-        Debug.DrawRay(transform.position, Vector3.down * 2, Color.red);
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, 2))
+        Debug.DrawRay(transform.position, Vector3.down * 2.2f, Color.red);
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, 2.2f))
         {
             switch (hit.collider.gameObject.tag)
             {
@@ -83,7 +83,7 @@ public class MonsterMove : MonoBehaviour
                 waveTime = 0f;
                 foot = !foot;
                 _UIManager.Setway(transform, foot, Color.red);
-                _WaveManager.SetWave(gameObject.transform, NewLight_Power, Color.red, WAVETAG.MONSTERSOUND);
+                _WaveManager.SetWave(gameObject.transform.position - new Vector3(0,2,0), NewLight_Power, Color.red, WAVETAG.MONSTERSOUND);
                 float Distance = Vector3.Distance(transform.position, GameObject.FindWithTag("PlayerPosition").gameObject.transform.position);
                 
                 if (Distance > 20f) { Distance = 20f; }

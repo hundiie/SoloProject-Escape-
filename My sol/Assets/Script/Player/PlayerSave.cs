@@ -14,7 +14,7 @@ public class PlayerSave : MonoBehaviour
         _PlayerManager = GetComponent<PlayerManager>();
         _UIManager = _PlayerManager.UiManager.GetComponent<UIManager>();
 
-        SavePoint = new Vector3(0,1,0);
+        SavePoint = transform.position;
     }
 
     private void OnTriggerEnter(Collider other)

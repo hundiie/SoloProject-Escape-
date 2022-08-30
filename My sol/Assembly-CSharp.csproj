@@ -86,6 +86,7 @@
     <Compile Include="Assets\Script\UI\Pause.cs" />
     <Compile Include="Assets\Script\Sound\SoundManager.cs" />
     <Compile Include="Assets\Script\UI\Walk\Foot.cs" />
+    <Compile Include="Assets\Script\Monster\MonsterPatrol.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Asset\TextMesh Pro\Shaders\TMPro.cginc" />

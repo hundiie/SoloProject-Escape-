@@ -91,7 +91,7 @@ public class PlayerMove : MonoBehaviour
             waveTime = 0f;
             foot = !foot;
             _UIManager.Setway(transform, foot, color);
-            _WaveManager.SetWave(gameObject.transform, Newlight_Power,color, WAVETAG.NOMALSOUND);
+            _WaveManager.SetWave(gameObject.transform.position - new Vector3(0, 2, 0), Newlight_Power, color, WAVETAG.NOMALSOUND) ;
             _SoundManager.PlayWalkSound(SoundNumber, PlayerSoundVolume);
         }
 

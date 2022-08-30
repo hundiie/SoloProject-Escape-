@@ -72,7 +72,7 @@ public class PlayerManager : MonoBehaviour
             }
 
             Skill_Step_Delta = 0;
-            _WaveManager.SetWave(gameObject.transform, SkilStep_light_Power, Color.white, WAVETAG.NOMALSOUND);
+            _WaveManager.SetWave(gameObject.transform.position - new Vector3(0,2,0), SkilStep_light_Power, Color.white, WAVETAG.NOMALSOUND);
             _UIManager.Skill(SkilStep_Cooltime);
             int TileSound = 0;
 
@@ -140,7 +140,7 @@ public class PlayerManager : MonoBehaviour
     public int GetTile()
     {
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, 2f))
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, 2.2f))
         {
             switch (hit.collider.gameObject.tag)
             {
@@ -148,7 +148,7 @@ public class PlayerManager : MonoBehaviour
                     return 1;
                 case "WaterTile":
                     return 2;
-                case "SandTile":
+                case "SoilTile":
                     return 3;
                 default:
                     break;

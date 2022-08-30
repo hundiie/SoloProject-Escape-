@@ -75,7 +75,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _IntersectionThreshold: 1
+    - _IntersectionThreshold: 0.2
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -89,7 +89,7 @@ Material:
     - _YSpeed: 1
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1.6055588, g: 1.6055588, b: 1.6055588, a: 1}
+    - _Color: {r: 4, g: 4, b: 4, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _HighlightColor: {r: 1.3422183e+29, g: 9.494952e+29, b: 0, a: 1}
+    - _HighlightColor: {r: 0, g: 4, b: 0, a: 1}
   m_BuildTextureStacks: []

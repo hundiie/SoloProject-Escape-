@@ -20,6 +20,7 @@ public class Retry : MonoBehaviour
             case 0:
                 {
                     GameObject.FindWithTag("Player").GetComponent<PlayerManager>().Resurrection();
+                    GameObject.FindWithTag("Item").GetComponent<Item>().BackUpItem();
                     gameObject.SetActive(false);
                     Cursor.lockState = CursorLockMode.Locked;
                 }

@@ -32,7 +32,7 @@ public class MapSound : MonoBehaviour
         if (deltaTime >= delay)
         {
             deltaTime = 0f;
-            _WaveManager.SetWave(gameObject.transform, lightPower, lightColor, WAVETAG.NATURESOUND);
+            _WaveManager.SetWave(gameObject.transform.position, lightPower, lightColor, WAVETAG.NATURESOUND);
             float Distance = Vector3.Distance(transform.position, GameObject.FindWithTag("PlayerPosition").gameObject.transform.position);
 
             if (Distance > 20f) { Distance = 20f; }

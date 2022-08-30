@@ -106,7 +106,7 @@ public class PlayerItem : MonoBehaviour
             {
                 float Distance = Vector3.Distance(transform.position, hit.transform.position);
                 delta = 0;
-                if (Distance <= 1.5f)
+                if (Distance <= 2.5f)
                 {
                     SaveItem = hit.collider.gameObject;
                 }

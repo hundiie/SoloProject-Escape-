@@ -18,7 +18,7 @@ public class MapManager : MonoBehaviour
         _WaveManager = WaveManager.GetComponent<WaveManager>();
         for (int i = 0; i < WaterSound.Length; i++)
         {
-            SetMapSound(WaterSound[i], Random.Range(2f,6f), 10, Color.blue,"NatureSound");
+            SetMapSound(WaterSound[i], Random.Range(2f,6f), 15, Color.blue,"NatureSound");
         }
     }
 

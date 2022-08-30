@@ -358,6 +358,7 @@
 "Assets/Script/Map/MapSound.cs"
 "Assets/Script/Monster/MonsterAI.cs"
 "Assets/Script/Monster/MonsterMove.cs"
+"Assets/Script/Monster/MonsterPatrol.cs"
 "Assets/Script/Player/PlayerInput.cs"
 "Assets/Script/Player/PlayerItem.cs"
 "Assets/Script/Player/PlayerManager.cs"

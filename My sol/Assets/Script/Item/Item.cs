@@ -12,11 +12,18 @@ public class Item : MonoBehaviour
     [Header("Item")]
     public float LightPower;
 
+    Vector3 StartPosition;
     private void Awake()
     {
+        StartPosition = transform.position;
         _SoundManager = GameObject.FindWithTag("SoundManager").gameObject.GetComponent<SoundManager>();
         _WaveManager = GameObject.FindWithTag("WaveManager").gameObject.GetComponent<WaveManager>();
         Player = GameObject.FindWithTag("PlayerPosition");
+    }
+
+    public void BackUpItem()
+    {
+        transform.position = StartPosition;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -51,7 +58,7 @@ public class Item : MonoBehaviour
         }
         if(color != Color.black)
         {
-            _WaveManager.SetWave(gameObject.transform, Newlight_Power, color, WAVETAG.NOMALSOUND);
+            _WaveManager.SetWave(gameObject.transform.position, Newlight_Power, color, WAVETAG.NOMALSOUND);
             if (Player != null)
             {
                 float Distance = Vector3.Distance(transform.position, Player.transform.position);
