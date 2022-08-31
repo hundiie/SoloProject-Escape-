@@ -13,7 +13,6 @@ public class CameraMove : MonoBehaviour
 
     private void Start()
     {
-        
     }
     private void Update()
     {
