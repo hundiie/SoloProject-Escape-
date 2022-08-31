@@ -140,7 +140,9 @@ Shader "ForceField"
 				float opacity = min(1.0, _Color.a / pow(abs(dot(viewDirection, normalDirection)), _SilhouetteEnhancement));
 				col.a = opacity;
 
-				float world_z = LinearEyeDepth(SAMPLE_DEPTH_TEXTURE_PROJ(_CameraDepthTexture, UNITY_PROJ_COORD(i.projPos)));
+				// float world_z = LinearEyeDepth(SAMPLE_DEPTH_TEXTURE_PROJ(_CameraDepthTexture, UNITY_PROJ_COORD(i.projPos)));
+				float world_z = LinearEyeDepth(tex2Dproj(_CameraDepthTexture, i.projPos));
+				
 				float projPos = i.projPos.w;
 				float distance = world_z - projPos;
 				float multiplier = pow(1 - saturate(distance / _IntersectionThreshold), 3);
