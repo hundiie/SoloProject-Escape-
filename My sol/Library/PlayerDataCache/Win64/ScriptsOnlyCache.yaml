@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - FootManager
     - GameManager
     - Item
+    - ItemManager
     - MapManager
     - MonsterAI
     - MonsterMove
@@ -20,6 +21,7 @@ ScriptsOnlyBuild:
     - Retry
     - SavePoint
     - Skill
+    - Sound
     - SoundManager
     - TextManager
     - Title
@@ -82,7 +84,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
   methodsToPreserve: []
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/Stage 1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -114,77 +116,81 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1794}
+      Script: {instanceID: 1796}
     - Class: 114
-      Script: {instanceID: 1838}
+      Script: {instanceID: 1840}
     - Class: 114
-      Script: {instanceID: 2652}
+      Script: {instanceID: 2654}
     - Class: 114
-      Script: {instanceID: 2690}
+      Script: {instanceID: 2692}
     - Class: 114
-      Script: {instanceID: 2836}
+      Script: {instanceID: 2838}
     - Class: 114
-      Script: {instanceID: 2900}
+      Script: {instanceID: 2902}
     - Class: 114
-      Script: {instanceID: 3126}
+      Script: {instanceID: 3130}
     - Class: 114
-      Script: {instanceID: 3430}
+      Script: {instanceID: 3434}
     - Class: 114
-      Script: {instanceID: 3618}
+      Script: {instanceID: 3624}
     - Class: 114
-      Script: {instanceID: 4160}
+      Script: {instanceID: 4166}
     - Class: 114
-      Script: {instanceID: 4298}
+      Script: {instanceID: 4304}
     - Class: 114
-      Script: {instanceID: 4544}
+      Script: {instanceID: 4550}
     - Class: 114
-      Script: {instanceID: 4682}
-    - Class: 114
-      Script: {instanceID: 4766}
+      Script: {instanceID: 4688}
     - Class: 114
       Script: {instanceID: 4772}
     - Class: 114
-      Script: {instanceID: 4856}
+      Script: {instanceID: 4778}
     - Class: 114
-      Script: {instanceID: 4924}
+      Script: {instanceID: 4862}
     - Class: 114
-      Script: {instanceID: 5550}
+      Script: {instanceID: 4930}
     - Class: 114
-      Script: {instanceID: 5828}
+      Script: {instanceID: 5556}
     - Class: 114
-      Script: {instanceID: 6144}
+      Script: {instanceID: 5834}
     - Class: 114
-      Script: {instanceID: 6166}
+      Script: {instanceID: 6150}
     - Class: 114
-      Script: {instanceID: 6320}
+      Script: {instanceID: 6172}
     - Class: 114
-      Script: {instanceID: 6534}
+      Script: {instanceID: 6326}
     - Class: 114
-      Script: {instanceID: 6648}
+      Script: {instanceID: 6540}
     - Class: 114
-      Script: {instanceID: 6668}
+      Script: {instanceID: 6654}
     - Class: 114
-      Script: {instanceID: 6752}
+      Script: {instanceID: 6674}
     - Class: 114
-      Script: {instanceID: 6796}
+      Script: {instanceID: 6758}
     - Class: 114
-      Script: {instanceID: 6820}
+      Script: {instanceID: 6802}
     - Class: 114
-      Script: {instanceID: 7000}
+      Script: {instanceID: 6826}
     - Class: 114
-      Script: {instanceID: 7340}
+      Script: {instanceID: 7006}
     - Class: 114
-      Script: {instanceID: 7602}
+      Script: {instanceID: 7346}
     - Class: 114
-      Script: {instanceID: 7780}
+      Script: {instanceID: 7608}
     - Class: 114
-      Script: {instanceID: 8002}
+      Script: {instanceID: 7786}
     - Class: 114
-      Script: {instanceID: 8340}
+      Script: {instanceID: 8008}
     - Class: 114
-      Script: {instanceID: 8382}
+      Script: {instanceID: 8346}
     - Class: 114
-      Script: {instanceID: 8616}
+      Script: {instanceID: 8388}
+    - Class: 114
+      Script: {instanceID: 8622}
+    - Class: 114
+      Script: {instanceID: 218442}
+    - Class: 114
+      Script: {instanceID: 533644}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -228,36 +234,34 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1794}
+      Script: {instanceID: 1796}
     - Class: 114
-      Script: {instanceID: 1838}
+      Script: {instanceID: 1840}
     - Class: 114
-      Script: {instanceID: 2462}
+      Script: {instanceID: 2464}
     - Class: 114
-      Script: {instanceID: 2900}
+      Script: {instanceID: 2902}
     - Class: 114
-      Script: {instanceID: 3126}
+      Script: {instanceID: 3130}
     - Class: 114
-      Script: {instanceID: 3430}
+      Script: {instanceID: 3434}
     - Class: 114
-      Script: {instanceID: 4502}
+      Script: {instanceID: 3620}
     - Class: 114
-      Script: {instanceID: 4780}
+      Script: {instanceID: 4508}
     - Class: 114
-      Script: {instanceID: 5550}
+      Script: {instanceID: 4786}
     - Class: 114
-      Script: {instanceID: 6166}
+      Script: {instanceID: 5556}
     - Class: 114
-      Script: {instanceID: 6320}
+      Script: {instanceID: 6172}
     - Class: 114
-      Script: {instanceID: 6668}
+      Script: {instanceID: 6326}
     - Class: 114
-      Script: {instanceID: 609764}
+      Script: {instanceID: 6674}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -433,6 +437,12 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionEnterMessageListener
   - hash:
       serializedVersion: 2
+      Hash: a84d486f30d30fa1ef50f6a58d46fe51
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MonsterPatrol
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -545,6 +555,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ContentSizeFitter
+  - hash:
+      serializedVersion: 2
+      Hash: aad9ed7aae0ab7bbeaf283b844c1e37e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Title
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1225,12 +1241,18 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: aad9ed7aae0ab7bbeaf283b844c1e37e
+      Hash: 17fe8b83719ab18425dde1b2cc280007
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Title
+    className: Sound
+  - hash:
+      serializedVersion: 2
+      Hash: b121526c098abf3a09b1222a21746dcb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ItemManager
   platform: 19
   scenePathNames:
   - Assets/Scenes/Title.unity
-  - Assets/Scenes/SampleScene.unity
-  playerPath: "C:/Users/KGA_28/OneDrive/\uBC14\uD0D5 \uD654\uBA74/Dark/2/My sol.exe"
+  - Assets/Scenes/Stage 1.unity
+  playerPath: "C:/Users/KGA_28/OneDrive/\uBC14\uD0D5 \uD654\uBA74/Dark/3/My sol.exe"

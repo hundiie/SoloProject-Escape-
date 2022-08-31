@@ -16,6 +16,8 @@ TagManager:
   - SoundManager
   - UIManager
   - WaveManager
+  - ItemManager
+  - Clear
   layers:
   - Default
   - TransparentFX

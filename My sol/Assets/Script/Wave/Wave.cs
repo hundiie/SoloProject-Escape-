@@ -28,11 +28,12 @@ public class Wave : MonoBehaviour
         Color color = GetComponent<Renderer>().material.GetColor("_HighlightColor");
         Color Col = GetComponent<Renderer>().material.color;
         
-        for (float pade = 1; pade >= 0; pade -= WaveSpeed / Size * Time.deltaTime)
+        for (float pade = 1; pade >= 0; pade -= (WaveSpeed / Size) * Time.deltaTime)
         {
             color.a = pade;
-            GetComponent<Renderer>().material.SetColor("_HighlightColor", color * 10);
-
+            GetComponent<Renderer>().material.SetColor("_HighlightColor", color);
+            color = GetComponent<Renderer>().material.GetColor("_HighlightColor");
+            GetComponent<Renderer>().material.SetColor("_HighlightColor", color * 5);
             Col.a = 0;
             GetComponent<Renderer>().material.color = Col * 2;
             yield return null;

@@ -21,7 +21,7 @@ public class Item : MonoBehaviour
         Player = GameObject.FindWithTag("PlayerPosition");
     }
 
-    public void BackUpItem()
+    public void _BackUpItem()
     {
         transform.position = StartPosition;
     }

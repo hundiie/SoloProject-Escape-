@@ -129,6 +129,16 @@ public class PlayerManager : MonoBehaviour
             Debug.Log("Á×À½");
             DIE();
         }
+
+        
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Clear")
+        {
+            _UIManager.Clear(true);
+        }
     }
 
     /// <summary>
