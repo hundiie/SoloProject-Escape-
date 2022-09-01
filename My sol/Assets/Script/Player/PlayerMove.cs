@@ -52,6 +52,7 @@ public class PlayerMove : MonoBehaviour
     private bool foot = true;
     private void playerMove(float X, float Z)
     {
+        //갈 방향 정하기
         CameraView();
         
         float NewSpeed = moveSpeed;
@@ -95,6 +96,7 @@ public class PlayerMove : MonoBehaviour
             _SoundManager.PlayWalkSound(SoundNumber, PlayerSoundVolume);
         }
 
+        //이동
         transform.Translate(X * NewSpeed * Time.deltaTime, 0, Z * NewSpeed * Time.deltaTime);
 
     }

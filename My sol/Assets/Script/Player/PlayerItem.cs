@@ -10,19 +10,34 @@ public class PlayerItem : MonoBehaviour
     public LayerMask ItemMask;
     public Material HighlightMaterial;
     public GameObject CatchPosition;
+    public GameObject LayObject;
+
 
     private PlayerInput _PlayerInput;
 
     private bool Light;
 
+    LineRenderer li;
     private void Awake()
     {
+        li = LayObject.AddComponent<LineRenderer>();
+        Material material = new Material(Shader.Find("Standard"));
+        material.color = new Color(0, 195, 255, 0.5f);
+        li.positionCount = 2;
+        // 레이저 굵기 표현
+        li.startWidth = 0.01f;
+        li.endWidth = 0.01f;
+
+
+
         _PlayerInput = GetComponent<PlayerInput>();
         CAMERA = GetComponent<PlayerManager>().CAMERA;
         Light = false;
     }
     private void Update()
     {
+        li.SetPosition(0, LayObject.transform.position);
+        li.SetPosition(1, LayObject.transform.position + (LayObject.transform.forward * 2));
         if (!Light)
         {
             Item = Cameracenter();
@@ -32,7 +47,7 @@ public class PlayerItem : MonoBehaviour
             if (!Light)
             {
                 ItemLight(Item, true);
-                if (Input.GetKeyDown(KeyCode.Mouse0))
+                if (Input.GetKeyDown(KeyCode.Mouse0) || OVRInput.GetDown(OVRInput.Button.One))
                 {
                     Item.GetComponent<Item>().Player = gameObject; 
                     
@@ -43,7 +58,8 @@ public class PlayerItem : MonoBehaviour
             else if (Light)
             {
                 CatchItem(Item);
-                if (Input.GetKeyDown(KeyCode.Mouse0))
+                //잡는 키
+                if (Input.GetKeyDown(KeyCode.Mouse0) || OVRInput.GetDown(OVRInput.Button.One))
                 {
                     CastItem(Item);
                     Light = false;
@@ -97,17 +113,18 @@ public class PlayerItem : MonoBehaviour
     {
         delta += Time.deltaTime;
         RaycastHit hit;
-        Debug.DrawRay(CAMERA.transform.position, CAMERA.transform.forward * 2, Color.blue);
+        Debug.DrawRay(LayObject.transform.position, LayObject.transform.forward * 2, Color.blue);
 
-        if (Physics.Raycast(CAMERA.transform.position, CAMERA.transform.forward, out hit))
+        if (Physics.Raycast(LayObject.transform.position, LayObject.transform.forward, out hit))
         {
-            //SaveItem = null;
+            
             if (hit.collider.gameObject.tag == "Item")
             {
                 float Distance = Vector3.Distance(transform.position, hit.transform.position);
                 delta = 0;
                 if (Distance <= 2.5f)
                 {
+                    li.SetPosition(1, hit.point);
                     SaveItem = hit.collider.gameObject;
                 }
             }
@@ -116,11 +133,15 @@ public class PlayerItem : MonoBehaviour
                 delta = 0;
                 SaveItem = null;
             }
+            
+            
         }
+
         if (Item != null)
         {
             ItemLight(Item, false);
         }
+        
         return SaveItem;
     }
 

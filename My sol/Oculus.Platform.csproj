@@ -53,7 +53,7 @@
     <UnityVersion>2021.3.7f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Oculus\Platform\Scripts\Models\AchievementProgress.cs" />
@@ -185,8 +185,8 @@
     <Compile Include="Assets\Oculus\Platform\Scripts\MicrophoneInput.cs" />
     <Compile Include="Assets\Oculus\Platform\Scripts\VoipSampleRate.cs" />
     <Compile Include="Assets\Oculus\Platform\Scripts\GroupPresenceOptions.cs" />
-    <Compile Include="Assets\Oculus\Platform\Scripts\Models\LanguagePackInfo.cs" />
     <Compile Include="Assets\Oculus\Platform\Samples\VrHoops\Scripts\VREyeRaycaster.cs" />
+    <Compile Include="Assets\Oculus\Platform\Scripts\Models\LanguagePackInfo.cs" />
     <Compile Include="Assets\Oculus\Platform\Scripts\Models\SystemVoipState.cs" />
     <Compile Include="Assets\Oculus\Platform\Samples\VrVoiceChat\Scripts\RoomManager.cs" />
     <Compile Include="Assets\Oculus\Platform\Scripts\KeyValuePairType.cs" />
@@ -512,9 +512,6 @@
     </Reference>
     <Reference Include="UnityEditor.WebGL.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.7f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.OSXStandalone.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.7f1\Editor\Data\PlaybackEngines\MacStandaloneSupport\UnityEditor.OSXStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Android.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.7f1\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
