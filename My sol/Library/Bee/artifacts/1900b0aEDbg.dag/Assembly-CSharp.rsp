@@ -529,6 +529,7 @@
 "Assets/Script/Player/PlayerManager.cs"
 "Assets/Script/Player/PlayerMove.cs"
 "Assets/Script/Player/PlayerSave.cs"
+"Assets/Script/Player/PlayerVRInput.cs"
 "Assets/Script/Sound/Sound.cs"
 "Assets/Script/Sound/SoundManager.cs"
 "Assets/Script/UI/Clear.cs"

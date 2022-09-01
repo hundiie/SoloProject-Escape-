@@ -10,7 +10,7 @@ public class Wave : MonoBehaviour
         GetComponent<Renderer>().material.SetColor("_HighlightColor", col);
         GetComponent<Renderer>().material.color = col;
         StartCoroutine(BlowUp(Size, MoveSpeed));
-        StartCoroutine(Pade(Size, MoveSpeed));
+        StartCoroutine(Fade(Size, MoveSpeed));
     }
     
     private IEnumerator BlowUp(float Size, float WaveSpeed)
@@ -22,22 +22,35 @@ public class Wave : MonoBehaviour
         }
         
     }
-
-    private IEnumerator Pade(float Size, float WaveSpeed)
+    
+    private static readonly string HIGHLIGHT_COLOR = "_HighlightColor";
+    private IEnumerator Fade(float Size, float WaveSpeed)
     {
-        Color color = GetComponent<Renderer>().material.GetColor("_HighlightColor");
-        Color Col = GetComponent<Renderer>().material.color;
-        
-        for (float pade = 1; pade >= 0; pade -= (WaveSpeed / Size) * Time.deltaTime)
+        Renderer renderer = GetComponent<Renderer>();
+        Color baseColor = renderer.material.color;
+        baseColor.a = 0f;
+        renderer.material.color = baseColor;
+
+        float alpha = 1.0f;
+        while (true)
         {
-            color.a = pade;
-            GetComponent<Renderer>().material.SetColor("_HighlightColor", color);
-            color = GetComponent<Renderer>().material.GetColor("_HighlightColor");
-            GetComponent<Renderer>().material.SetColor("_HighlightColor", color * 5);
-            Col.a = 0;
-            GetComponent<Renderer>().material.color = Col * 2;
+            if (alpha < 0.0f)
+            {
+                break;
+            }
+
+            Color highlight = renderer.material.GetColor(HIGHLIGHT_COLOR);
+            highlight.a = alpha;
+            renderer.material.SetColor(HIGHLIGHT_COLOR, highlight);
+
+            
+            //baseColor.a = 0;
+            //renderer.material.color = baseColor * 2;
+
+            alpha -= (WaveSpeed / Size) * Time.deltaTime;
             yield return null;
         }
+
         gameObject.SetActive(false);
     }
 

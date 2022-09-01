@@ -41,6 +41,7 @@ Shader "ForceField"
 
         Pass
         {
+			//오픈 GL에서도 알파 블랜딩이 적용되게 하기
 			Blend SrcAlpha OneMinusSrcAlpha
             ZWrite Off
             Cull Off 
@@ -108,11 +109,11 @@ Shader "ForceField"
                 return o;
             }
  
-            half4 frag(v2f i) : COLOR
-            {
+			half4 frag(v2f i) : COLOR
+			{
 				float2 texCoord = i.texcoord + float2(_XSpeed * _Time.x, _YSpeed * _Time.x);
 
-				float heightSampleCenter = tex2D(_MainTex, texCoord).r;
+				/*float heightSampleCenter = tex2D(_MainTex, texCoord).r;
 				float heightSampleRight = tex2D(_MainTex, texCoord + float2(_MainTex_TexelSize.x, 0)).r;
 				float heightSampleUp = tex2D(_MainTex, texCoord + float2(0, _MainTex_TexelSize.y)).r;
 
@@ -123,15 +124,15 @@ Shader "ForceField"
 				normal = cross(float3(1, 0, sampleDeltaRight * _BumpStrength), float3(0, 1, sampleDeltaUp * _BumpStrength));
 				normal = normalize(normal);
 				
-				float2 offset = normal * _Distortion * _GrabTexture_TexelSize.xy;
-#ifdef UNITY_Z_0_FAR_FROM_CLIPSPACE 
-				i.uvgrab.xy = offset * UNITY_Z_0_FAR_FROM_CLIPSPACE(i.uvgrab.z) + i.uvgrab.xy;
-#else
-				i.uvgrab.xy = offset * i.uvgrab.z + i.uvgrab.xy;
-#endif
+				float2 offset = normal * _Distortion * _GrabTexture_TexelSize.xy;*/
+				
+//#ifdef UNITY_Z_0_FAR_FROM_CLIPSPACE 
+//				i.uvgrab.xy = offset * UNITY_Z_0_FAR_FROM_CLIPSPACE(i.uvgrab.z) + i.uvgrab.xy;
+//#else
+//				i.uvgrab.xy = offset * i.uvgrab.z + i.uvgrab.xy;
+//#endif
 
 				half4 col = tex2Dproj(_GrabTexture, UNITY_PROJ_COORD(i.uvgrab)) * _Color;
-
 				float alpha = tex2D(_MainTex, texCoord);
 
 				float3 normalDirection = normalize(i.normal);
@@ -147,6 +148,7 @@ Shader "ForceField"
 				float distance = world_z - projPos;
 				float multiplier = pow(1 - saturate(distance / _IntersectionThreshold), 3);
 
+				_HighlightColor.rgb *= 5;
 				return lerp(col, _HighlightColor, multiplier);
             }
  
