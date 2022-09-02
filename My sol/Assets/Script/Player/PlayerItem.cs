@@ -82,7 +82,7 @@ public class PlayerItem : MonoBehaviour
     {
         CastItem.GetComponent<Rigidbody>().useGravity = true;
         CastItem.tag = "Item";
-        CastItem.GetComponent<Rigidbody>().AddRelativeForce(CAMERA.transform.forward + new Vector3(0, 10000, 30000) * Time.smoothDeltaTime, ForceMode.Force);
+        CastItem.GetComponent<Rigidbody>().AddRelativeForce(CAMERA.transform.forward + new Vector3(0, 10000, 70000) * Time.smoothDeltaTime, ForceMode.Force);
     }
 
     private Material SaveMaterial;
