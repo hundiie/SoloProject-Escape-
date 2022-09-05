@@ -20,13 +20,13 @@ public class PlayerItem : MonoBehaviour
     LineRenderer li;
     private void Awake()
     {
-        li = LayObject.AddComponent<LineRenderer>();
         Material material = new Material(Shader.Find("Standard"));
         material.color = new Color(0, 195, 255, 0.5f);
-        li.positionCount = 2;
-        // 레이저 굵기 표현
-        li.startWidth = 0.01f;
-        li.endWidth = 0.01f;
+        // 레이저 표현
+        //li = LayObject.AddComponent<LineRenderer>();
+        //li.positionCount = 2;
+        //li.startWidth = 0.01f;
+        //li.endWidth = 0.01f;
 
 
 
@@ -36,8 +36,8 @@ public class PlayerItem : MonoBehaviour
     }
     private void Update()
     {
-        li.SetPosition(0, LayObject.transform.position);
-        li.SetPosition(1, LayObject.transform.position + (LayObject.transform.forward * 2));
+        //li.SetPosition(0, LayObject.transform.position);
+        //li.SetPosition(1, LayObject.transform.position + (LayObject.transform.forward * 2));
         if (!Light)
         {
             Item = Cameracenter();
@@ -124,7 +124,7 @@ public class PlayerItem : MonoBehaviour
                 delta = 0;
                 if (Distance <= 2.5f)
                 {
-                    li.SetPosition(1, hit.point);
+                    //li.SetPosition(1, hit.point);
                     SaveItem = hit.collider.gameObject;
                 }
             }

@@ -47,6 +47,7 @@ public class PlayerMove : MonoBehaviour
     private void CameraView()
     {
         transform.forward = new Vector3(CAMERA.transform.forward.x, 0f, CAMERA.transform.forward.z).normalized;
+        //transform.rotation = Quaternion.Euler(0f, OculusCamera.transform.rotation.y, 0f);
     }
 
     private bool foot = true;
